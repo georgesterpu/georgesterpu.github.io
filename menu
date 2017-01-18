@@ -1,0 +1,11 @@
+main
+    home                [index.html]
+    software            [software.html]
+    about		[about.html]
+
+news
+    events		    [events.html]
+    opportunities           [opportunities.html]
+
+links
+    research groups          [groups.html]
