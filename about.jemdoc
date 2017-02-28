@@ -1,0 +1,8 @@
+# jemdoc: addcss{index.css}, menu{menu}{about.html}, nofooter,
+= About me
+
+I'm fascinated by these places:
+
+\
+
+#includeraw{map.html}
