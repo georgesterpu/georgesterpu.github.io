@@ -12,3 +12,12 @@ Name | Venue | Date  | keywords||
 [http://videolectures.net/ VideoLectures.NET] | Online | | ||
 [https://www.superlectures.com/conferences.php SuperLectures] | Online | | Interspeech, ASRU, SIGdial, Odyssey
 ~~~
+
+\n
+
+*Software related*
+~~~
+{}{table}{conferences}
+Name | Venue | Date | keywords ||
+[https://events.withgoogle.com/tensorflow-dev-summit/watch-the-videos/\#content TensorFlow] | TensorFlow Dev Summit, Mountain View CA | 15 February 2017 | 8h livestream
+~~~
