@@ -1,0 +1,13 @@
+# jemdoc: addcss{index.css}, menu{menu}{hpc.html}
+= Tutorials
+
+== Using the TCD HPC Clusters
+
+
+=== Available Resources
+
+[http://www.tchpc.tcd.ie/resources/clusters]
+
+=== Getting an account
+
+Send an email to [ops@tchpc.tcd.ie] or [techops@adaptcentre.ie ]
