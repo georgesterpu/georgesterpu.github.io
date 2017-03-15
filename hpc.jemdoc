@@ -129,3 +129,7 @@ Install *freerdp* (or alternative app) and use something like:
 {bash command}{pyint}
 $ xfreerdp /v:gpserver.mee.tcd.ie /u:{tcd_user} /w:3000 /h:2000
 ~~~
+
+=== 3. Comprehensive TCD HPC guides
+
+[http://www.tchpc.tcd.ie/support/gettingstarted]
