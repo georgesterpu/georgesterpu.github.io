@@ -125,5 +125,5 @@ This will copy your public key from \~\/.ssh\/id_rsa.pub to the remote server on
 Install the *freerdp* app and use something like:
 ~~~
 {bash command}{pyint}
-$ xfreerdp /v:gpserver.mee.tcd.ie /u:sterpug /w:3000 /h:2000
+$ xfreerdp /v:gpserver.mee.tcd.ie /u:{tcd_user} /w:3000 /h:2000
 ~~~
