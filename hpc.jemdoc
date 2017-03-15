@@ -9,12 +9,12 @@
 [http://www.tchpc.tcd.ie/resources/clusters]\n
 [https://sites.google.com/a/adaptcentre.ie/it-systems/home/equipment-overview] (internal ADAPT webpage)
 
-=== 1. Getting an account
+=== 1. Obtaining an account
 
 Send an email to [ops@tchpc.tcd.ie] or [techops@adaptcentre.ie ]
 
 === 2. Logging in
-Connecting to the ADAPT *boole* cluster
+Connecting to the ADAPT *boole* cluster (similar for others)
 ~~~
 {bash command}{pyint}
 $ ssh {username}@boole.tchpc.tcd.ie
@@ -50,7 +50,7 @@ python main.py
 ~~~
 
 The \# lines are going to be interpreted by the scheduling software, so configure as necessary.\n
-In this case, we request 40 tasks (threads) to run for at most 0 days and 5 hours, and we specify a job name perhaps meaningful for our experiment.\n
+In this case, we request 40 threads to run for at most 0 days and 5 hours, and we specify a job name perhaps meaningful for our experiment.\n
 Remember to change the job name for other experiments that are supposed to run in parallel. \n
 More options by typing *\$ sbatch \-\-help* \n
 \n
@@ -90,7 +90,7 @@ $ squeue
 $ smap -i 1
 ~~~
 As the program runs, you should also see a logfile being updated from time to time, such as slurm-172493.out\n
-Open the log file when your job is finished to see completion status and details.
+Open the log file when your job is finished to see the completion status and other details.
 
 === 7. Check the cluster load, node availability
 ~~~
@@ -120,3 +120,10 @@ $ ssh-copy-id -i ~/.ssh/id_rsa.pub {username}@boole.tchpc.tcd.ie
 ~~~
 Then type your password for the last time\n
 This will copy your public key from \~\/.ssh\/id_rsa.pub to the remote server on \~\/.ssh\/authorized_keys
+
+=== 2. Remote desktop connection to GPSERVER (Windows)
+Install the *freerdp* app and use something like:
+~~~
+{bash command}{pyint}
+$ xfreerdp /v:gpserver.mee.tcd.ie /u:sterpug /w:3000 /h:2000
+~~~

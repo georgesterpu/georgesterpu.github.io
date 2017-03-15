@@ -31,10 +31,10 @@
 <h3>0. Available Resources</h3>
 <p><a href="http://www.tchpc.tcd.ie/resources/clusters">http://www.tchpc.tcd.ie/resources/clusters</a><br />
 <a href="https://sites.google.com/a/adaptcentre.ie/it-systems/home/equipment-overview">https://sites.google.com/a/adaptcentre.ie/it-systems/home/equipment-overview</a> (internal ADAPT webpage)</p>
-<h3>1. Getting an account</h3>
+<h3>1. Obtaining an account</h3>
 <p>Send an email to <a href="mailto:ops@tchpc.tcd.ie">ops@tchpc.tcd.ie</a> or <a href="mailto:techops@adaptcentre.ie">techops@adaptcentre.ie</a></p>
 <h3>2. Logging in</h3>
-<p>Connecting to the ADAPT <b>boole</b> cluster</p>
+<p>Connecting to the ADAPT <b>boole</b> cluster (similar for others)</p>
 <div class="codeblock">
 <div class="blocktitle">bash command</div>
 <div class="blockcontent"><pre>
@@ -68,7 +68,7 @@ Create a launch script on the remote server, eg. <b>launch.sh</b></p>
 python main.py
 </pre></div></div>
 <p>The # lines are going to be interpreted by the scheduling software, so configure as necessary.<br />
-In this case, we request 40 tasks (threads) to run for at most 0 days and 5 hours, and we specify a job name perhaps relevant to our experiment.<br />
+In this case, we request 40 threads to run for at most 0 days and 5 hours, and we specify a job name perhaps meaningful for our experiment.<br />
 Remember to change the job name for other experiments that are supposed to run in parallel. <br />
 More options by typing <b>$ sbatch --help</b> <br />
 <br />
@@ -109,7 +109,7 @@ $ squeue
 $ smap -i 1
 </pre></div></div>
 <p>As the program runs, you should also see a logfile being updated from time to time, such as slurm-172493.out<br />
-Open the log file when your job is finished to see completion status and details.</p>
+Open the log file when your job is finished to see the completion status and other details.</p>
 <h3>7. Check the cluster load, node availability</h3>
 <div class="codeblock">
 <div class="blocktitle">bash command</div>
@@ -137,13 +137,16 @@ $ ssh-copy-id -i ~/.ssh/id_rsa.pub {username}@boole.tchpc.tcd.ie
 </pre></div></div>
 <p>Then type your password for the last time<br />
 This will copy your public key from ~/.ssh/id_rsa.pub to the remote server on ~/.ssh/authorized_keys</p>
+<h3>2. Remote desktop connection to GPSERVER (Windows)</h3>
+<p>Install the <b>freerdp</b> app and use something like:</p>
+<div class="codeblock">
+<div class="blocktitle">bash command</div>
+<div class="blockcontent"><pre>
+$ xfreerdp /v:gpserver.mee.tcd.ie /u:sterpug /w:3000 /h:2000
+</pre></div></div>
 <div id="footer">
 <div id="footer-text">
-<<<<<<< HEAD
-Page generated 2017-03-15 14:19:59 GMT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
-=======
-Page generated 2017-03-15 11:28:39 GMT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
->>>>>>> 3ed37f946a76360de120239b452c91a04ca3aedf
+Page generated 2017-03-15 20:10:46 GMT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>
