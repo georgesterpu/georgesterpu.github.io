@@ -121,8 +121,9 @@ $ ssh-copy-id -i ~/.ssh/id_rsa.pub {username}@boole.tchpc.tcd.ie
 Then type your password for the last time\n
 This will copy your public key from \~\/.ssh\/id_rsa.pub to the remote server on \~\/.ssh\/authorized_keys
 
-=== 2. Remote desktop connection to GPSERVER (Windows)
+=== 2. Remote desktop connection to GPSERVER (running Windows)
 The GPSERVER can be accessed from external networks too (eg. home network) with the TCD credentials.\n
+Server address: gpserver.mee.tcd.ie \n
 Install *freerdp* (or alternative) app and use something like:
 ~~~
 {bash command}{pyint}
