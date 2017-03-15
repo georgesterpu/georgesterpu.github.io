@@ -28,13 +28,97 @@
 <h1>Tutorials</h1>
 </div>
 <h2>Using the TCD HPC Clusters</h2>
-<h3>Available Resources</h3>
-<p><a href="http://www.tchpc.tcd.ie/resources/clusters">http://www.tchpc.tcd.ie/resources/clusters</a></p>
-<h3>Getting an account</h3>
+<h3>0. Available Resources</h3>
+<p><a href="http://www.tchpc.tcd.ie/resources/clusters">http://www.tchpc.tcd.ie/resources/clusters</a><br />
+<a href="https://sites.google.com/a/adaptcentre.ie/it-systems/home/equipment-overview">https://sites.google.com/a/adaptcentre.ie/it-systems/home/equipment-overview</a> (internal ADAPT webpage)</p>
+<h3>1. Getting an account</h3>
 <p>Send an email to <a href="mailto:ops@tchpc.tcd.ie">ops@tchpc.tcd.ie</a> or <a href="mailto:techops@adaptcentre.ie">techops@adaptcentre.ie</a></p>
+<h3>2. Logging in</h3>
+<p>Connecting to the ADAPT <b>boole</b> cluster</p>
+<div class="codeblock">
+<div class="blocktitle">bash command</div>
+<div class="blockcontent"><pre>
+$ ssh {username}@boole.tchpc.tcd.ie
+</pre></div></div>
+<p>For your convenience, you may want to mount your remote partition to a local folder<br />
+This could be achieved using <b>sshfs</b> or alternative tools</p>
+<div class="codeblock">
+<div class="blocktitle">text editor</div>
+<div class="blockcontent"><pre>
+<span class = "comment">#!/bin/bash</span>
+sshfs -o cache=no,allow_other {username}@boole.tchpc.tcd.ie:/home/{username}/ ~/local_dir/
+</pre></div></div>
+<h3>3. Transfer your data</h3>
+<div class="codeblock">
+<div class="blocktitle">bash command</div>
+<div class="blockcontent"><pre>
+$ scp my_transfer.tar {username}@boole.tchpc.tcd.ie:~/work/mytransfer/
+</pre></div></div>
+<h3>4. Running your code</h3>
+<p>First, set up your work environment<br />
+Create a launch script on the remote server, eg. <b>launch.sh</b></p>
+<div class="codeblock">
+<div class="blocktitle">text editor</div>
+<div class="blockcontent"><pre>
+<span class = "comment">#!/bin/sh</span>
+<span class = "comment">#SBATCH -n 40</span>
+<span class = "comment">#SBATCH -J my_unicorn</span>
+<span class = "comment">#SBATCH -t 0-05:00:00</span>
+
+python main.py
+</pre></div></div>
+<p>The # lines are going to be interpreted by the scheduling software, so configure as necessary.<br />
+In this case, we request 40 tasks (threads) to run for at most 0 days and 5 hours, and we specify a job name perhaps relevant to our experiment.<br />
+Remember to change the job name for other experiments that are supposed to run in parallel. <br />
+More options by typing <b>$ sbatch --help</b> <br />
+<br />
+Finally, launch your script:</p>
+<div class="codeblock">
+<div class="blocktitle">bash command</div>
+<div class="blockcontent"><pre>
+$ sbatch launch.sh
+</pre></div></div>
+<h3>5. Example: a python/conda environment </h3>
+<p>While connected to the remote server through ssh:</p>
+<div class="codeblock">
+<div class="blocktitle">bash command</div>
+<div class="blockcontent"><pre>
+$ mkdir ~/myapps; cd ~/myapps
+$ wget -c http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
+$ bash Miniconda-latest-Linux-x86_64.sh
+</pre></div></div>
+<p>Then configure your environment as usual<br />
+In the launch script run by sbatch, activate your environment right before calling python.<br />
+The example <b>launch.sh</b> script above would use the system python, so we need to add:</p>
+<div class="codeblock">
+<div class="blocktitle">text editor</div>
+<div class="blockcontent"><pre>
+<span class = "comment">#!/bin/sh</span>
+<span class = "comment">#SBATCH -n 40</span>
+<span class = "comment">#SBATCH -J my_unicorn2</span>
+<span class = "comment">#SBATCH -t 0-05:00:00</span>
+
+source activate my_env
+python main.py
+</pre></div></div>
+<h3>6. Check job status</h3>
+<div class="codeblock">
+<div class="blocktitle">bash command</div>
+<div class="blockcontent"><pre>
+$ squeue
+$ smap -i 1
+</pre></div></div>
+<p>As the program runs, you should also see a logfile being updated from time to time, such as slurm-172493.out<br />
+Open the log file when your job is finished to see completion status and details.</p>
+<h3>7. Check the cluster load, node availability</h3>
+<div class="codeblock">
+<div class="blocktitle">bash command</div>
+<div class="blockcontent"><pre>
+$ sinfo -Nel
+</pre></div></div>
 <div id="footer">
 <div id="footer-text">
-Page generated 2017-03-10 17:39:35 GMT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2017-03-15 00:33:43 GMT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>

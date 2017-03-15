@@ -4,10 +4,96 @@
 == Using the TCD HPC Clusters
 
 
-=== Available Resources
+=== 0. Available Resources
 
-[http://www.tchpc.tcd.ie/resources/clusters]
+[http://www.tchpc.tcd.ie/resources/clusters]\n
+[https://sites.google.com/a/adaptcentre.ie/it-systems/home/equipment-overview] (internal ADAPT webpage)
 
-=== Getting an account
+=== 1. Getting an account
 
 Send an email to [ops@tchpc.tcd.ie] or [techops@adaptcentre.ie ]
+
+=== 2. Logging in
+Connecting to the ADAPT *boole* cluster
+~~~
+{bash command}{pyint}
+$ ssh {username}@boole.tchpc.tcd.ie
+~~~
+
+For your convenience, you may want to mount your remote partition to a local folder\n
+This could be achieved using *sshfs* or alternative tools
+~~~
+{text editor}{pyint}
+#!/bin/bash
+sshfs -o cache=no,allow_other {username}@boole.tchpc.tcd.ie:/home/{username}/ ~/local_dir/
+~~~
+
+=== 3. Transfer your data
+
+~~~
+{bash command}{pyint}
+$ scp my_transfer.tar {username}@boole.tchpc.tcd.ie:~/work/mytransfer/
+~~~
+
+=== 4. Running your code
+First, set up your work environment\n
+Create a launch script on the remote server, eg. *launch.sh*
+
+~~~
+{text editor}{pyint}
+#!/bin/sh
+#SBATCH -n 40
+#SBATCH -J my_unicorn
+#SBATCH -t 0-05:00:00
+
+python main.py
+~~~
+
+The \# lines are going to be interpreted by the scheduling software, so configure as necessary.\n
+In this case, we request 40 tasks (threads) to run for at most 0 days and 5 hours, and we specify a job name perhaps relevant to our experiment.\n
+Remember to change the job name for other experiments that are supposed to run in parallel. \n
+More options by typing *\$ sbatch \-\-help* \n
+\n
+Finally, launch your script:
+
+~~~
+{bash command}{pyint}
+$ sbatch launch.sh
+~~~
+
+=== 5. Example: a python/conda environment 
+While connected to the remote server through ssh:
+~~~
+{bash command}{pyint}
+$ mkdir ~/myapps; cd ~/myapps
+$ wget -c http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
+$ bash Miniconda-latest-Linux-x86_64.sh
+~~~
+Then configure your environment as usual\n
+In the launch script run by sbatch, activate your environment right before calling python.\n
+The example *launch.sh* script above would use the system python, so we need to add:
+~~~
+{text editor}{pyint}
+#!/bin/sh
+#SBATCH -n 40
+#SBATCH -J my_unicorn2
+#SBATCH -t 0-05:00:00
+
+source activate my_env
+python main.py
+~~~
+
+=== 6. Check job status
+~~~
+{bash command}{pyint}
+$ squeue
+$ smap -i 1
+~~~
+As the program runs, you should also see a logfile being updated from time to time, such as slurm-172493.out\n
+Open the log file when your job is finished to see completion status and details.
+
+=== 7. Check the cluster load, node availability
+~~~
+{bash command}{pyint}
+$ sinfo -Nel
+~~~
