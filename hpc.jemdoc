@@ -50,7 +50,7 @@ python main.py
 ~~~
 
 The \# lines are going to be interpreted by the scheduling software, so configure as necessary.\n
-In this case, we request 40 tasks (threads) to run for at most 0 days and 5 hours, and we specify a job name perhaps relevant to our experiment.\n
+In this case, we request 40 tasks (threads) to run for at most 0 days and 5 hours, and we specify a job name perhaps meaningful for our experiment.\n
 Remember to change the job name for other experiments that are supposed to run in parallel. \n
 More options by typing *\$ sbatch \-\-help* \n
 \n
