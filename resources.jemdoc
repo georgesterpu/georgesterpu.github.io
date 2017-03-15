@@ -1,7 +1,7 @@
 # jemdoc: addcss{index.css}, menu{menu}{resources.html}
 = Resources
 
-*Workshops, seasonal schools, others*
+== Workshops, seasonal schools, others
 ~~~
 {}{table}{conferences}
 Name | Venue | Date  | keywords||
@@ -13,11 +13,14 @@ Name | Venue | Date  | keywords||
 [https://www.superlectures.com/conferences.php SuperLectures] | Online | | Interspeech, ASRU, SIGdial, Odyssey
 ~~~
 
-\n
 
-*Software related*
+== Software related
 ~~~
 {}{table}{conferences}
 Name | Venue | Date | keywords ||
 [https://events.withgoogle.com/tensorflow-dev-summit/watch-the-videos/\#content TensorFlow] | TensorFlow Dev Summit, Mountain View CA | 15 February 2017 | 8h livestream
 ~~~
+
+== Tutorials
+
+=== 1. [hpc.html Using the TCD HPC Resources]
