@@ -97,3 +97,26 @@ Open the log file when your job is finished to see completion status and details
 {bash command}{pyint}
 $ sinfo -Nel
 ~~~
+
+=== 8. Cancel a job
+~~~
+{}{img_left}{./pics/cancel_this.png}{Can we cancel this?}
+~~~
+
+Wrong setup ? Let's cancel the job:
+~~~
+{bash command}{pyint}
+$ scancel -n unicorn6
+~~~
+
+== Extra
+
+=== 1. Login without password
+On your local system:
+~~~
+{bash command}{pyint}
+$ ssh-keygen -t rsa
+$ ssh-copy-id -i ~/.ssh/id_rsa.pub {username}@boole.tchpc.tcd.ie
+~~~
+Then type your password for the last time\n
+This will copy your public key from \~\/.ssh\/id_rsa.pub to the remote server on \~\/.ssh\/authorized_keys

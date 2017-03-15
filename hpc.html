@@ -116,9 +116,30 @@ Open the log file when your job is finished to see completion status and details
 <div class="blockcontent"><pre>
 $ sinfo -Nel
 </pre></div></div>
+<h3>8. Cancel a job</h3>
+<table class="imgtable"><tr><td>
+<img src="./pics/cancel_this.png" alt="Can we cancel this?" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>Wrong setup ? Let's cancel the job:</p>
+<div class="codeblock">
+<div class="blocktitle">bash command</div>
+<div class="blockcontent"><pre>
+$ scancel -n unicorn6
+</pre></div></div>
+<h2>Extra</h2>
+<h3>1. Login without password</h3>
+<p>On your local system:</p>
+<div class="codeblock">
+<div class="blocktitle">bash command</div>
+<div class="blockcontent"><pre>
+$ ssh-keygen -t rsa
+$ ssh-copy-id -i ~/.ssh/id_rsa.pub {username}@boole.tchpc.tcd.ie
+</pre></div></div>
+<p>Then type your password for the last time<br />
+This will copy your public key from ~/.ssh/id_rsa.pub to the remote server on ~/.ssh/authorized_keys</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2017-03-15 00:33:43 GMT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2017-03-15 14:19:59 GMT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>
