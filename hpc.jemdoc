@@ -124,7 +124,7 @@ This will copy your public key from \~\/.ssh\/id_rsa.pub to the remote server on
 === 2. Remote desktop connection to GPSERVER (running Windows)
 The GPSERVER can be accessed from external networks too (eg. home network) with the TCD credentials.\n
 Server address: gpserver.mee.tcd.ie \n
-Install *freerdp* (or alternative) app and use something like:
+Install *freerdp* (or alternative app) and use something like:
 ~~~
 {bash command}{pyint}
 $ xfreerdp /v:gpserver.mee.tcd.ie /u:{tcd_user} /w:3000 /h:2000
