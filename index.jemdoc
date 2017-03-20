@@ -1,6 +1,11 @@
 # jemdoc: addcss{index.css}, menu{menu}{index.html}
-= Page unavailable
+= George Sterpu
 
 ~~~
-{}{img_left}{./pics/main.jpg}{Feomathar}
+{}{img_left}{./pics/main.jpg}{Feomathar}{118}{136}
+[index.html George Sterpu], Ph.D. Student \n
+[http://www.tcd.ie/eleceng/ Trinity College Dublin] & [http://www.adaptcentre.ie/ The ADAPT Centre] \n
+Research area: Audio-Visual Speech Recognition\n\n
+
+Supervisor: [http://www.mee.tcd.ie/~naharte/ *Dr. Naomi Harte*] 	
 ~~~
