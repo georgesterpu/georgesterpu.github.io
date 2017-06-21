@@ -24,3 +24,4 @@ Name | Venue | Date | keywords ||
 == Tutorials
 
 === 1. [hpc.html Using the TCD HPC Resources]
+=== 2. [compile_tensorflow.html Compile TensorFlow from sources]
