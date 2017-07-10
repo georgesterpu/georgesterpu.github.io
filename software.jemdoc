@@ -1,2 +1,14 @@
 # jemdoc: addcss{index.css}, menu{menu}{software.html}
-= Page unavailable
+= Software
+
+~~~
+Our work is based on *free open-source* software.\n
+Development platform: *Manjaro* Linux, testing branch\n
+Please let me know of your feedback, I usually reply within one day !
+~~~
+
+=== 1. [https://github.com/georgesterpu/pyVSR pyVSR]: Python toolkit for Visual Speech Recognition
+
+pyVSR is a Python toolkit aimed at running Visual Speech Recognition (VSR) experiments in a traditional framework (e.g. handcrafted visual features, Hidden Markov Models for pattern recognition).
+
+The main goal of pyVSR is to easily reproduce VSR experiments in order to have a baseline result on most publicly available audio-visual datasets.
