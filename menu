@@ -3,10 +3,13 @@ main
     software            [software.html]
     about		[about.html]
 
-news
-    events		    [events.html]
-    opportunities           [opportunities.html]
+events
+    speech    [speech.html]
+    ML        [ml.html]
+    
+
 
 links
     research groups          [groups.html]
     resources		     [resources.html]
+    opportunities           [opportunities.html]

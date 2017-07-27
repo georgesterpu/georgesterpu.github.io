@@ -1,4 +1,4 @@
-# jemdoc: addcss{index.css}, menu{menu}{about.html}, nofooter,
+# jemdoc: addcss{./css/index.css}, menu{menu}{about.html}, nofooter,
 = About me
 
 I'm fascinated by these places:

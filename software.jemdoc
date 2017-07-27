@@ -1,4 +1,4 @@
-# jemdoc: addcss{index.css}, menu{menu}{software.html}
+# jemdoc: addcss{./css/index.css}, menu{menu}{software.html}
 = Software
 
 ~~~

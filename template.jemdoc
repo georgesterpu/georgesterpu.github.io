@@ -1,2 +1,2 @@
-# jemdoc: addcss{index.css}, menu{menu}{template.html}
+# jemdoc: addcss{./css/index.css}, menu{menu}{template.html}
 = Page title

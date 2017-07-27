@@ -1,4 +1,4 @@
-# jemdoc: addcss{index.css}, menu{menu}{hpc.html}
+# jemdoc: addcss{./css/index.css}, menu{menu}{hpc.html}
 = Tutorials
 
 == Using the TCD HPC Resources

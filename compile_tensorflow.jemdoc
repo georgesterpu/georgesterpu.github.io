@@ -1,4 +1,4 @@
-# jemdoc: addcss{index.css}, menu{menu}{compile_tensorflow.html}
+# jemdoc: addcss{./css/index.css}, menu{menu}{compile_tensorflow.html}
 = Compile instructions for TensorFlow
 
 == Tested on Manjaro/Arch Linux only !
