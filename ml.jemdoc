@@ -1,4 +1,4 @@
-# jemdoc: addcss{./css/index.css}, menu{menu}{ml.html}
+# jemdoc: addcss{./css/index.css}, menu{menu}{ml.html}, addcss{./css/table.css}
 = Machine Learning Events
 
 
