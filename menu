@@ -1,5 +1,6 @@
 main
     home                [index.html]
+    publications	[publications.html]
     software            [software.html]
     about		[about.html]
 
