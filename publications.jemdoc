@@ -1,0 +1,13 @@
+# jemdoc: addcss{./css/index.css}, menu{menu}{publications.html}
+= Publications
+
+== Conferences, workshops
+
+~~~
+*Towards lipreading sentences using Active Appearance Models*\n
+George Sterpu and Naomi Harte.\n
+International Conference on Auditory-Visual Speech Processing.\n
+Stockholm, Sweden, August 2017.\n
+\[[https://georgesterpu.github.io/papers/AVSP_2017.pdf link]\]\[[bibs/avsp2017.bib bibtex]\]
+~~~
+
