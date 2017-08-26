@@ -3,13 +3,12 @@
 
 == Conferences, workshops
 
-~~~
-*Towards Lipreading Sentences using Active Appearance Models*\n
+. *Towards Lipreading Sentences using Active Appearance Models*\n
 George Sterpu and Naomi Harte.\n
 International Conference on Auditory-Visual Speech Processing.\n
 Stockholm, Sweden, August 2017.\n
 \[[https://georgesterpu.github.io/papers/AVSP_2017.pdf pdf]\]
 \[[bibs/avsp2017.bib bibtex]]
 \[[https://github.com/georgesterpu/pyVSR code]]
-~~~
+
 
