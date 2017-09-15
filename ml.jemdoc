@@ -7,7 +7,6 @@
 ~~~
 {}{table}{conferences}
 Name | Location | Date  | Paper due||
-[https://bmvc2017.london/ BMVC 2017 ]| London | 4-7 September 2017 | passed ||
 [http://iccv2017.thecvf.com/ ICCV 2017] | Venice | 22-29 October 2017 | passed ||
 [https://www.nips.cc NIPS 2017] | Long Beach, CA | 4-9 December 2017 | passed ||
 [https://eccv2018.org/ ECCV 2018] | Munich | 8-14 September 2017 | TBA
@@ -18,6 +17,7 @@ Name | Location | Date  | Paper due||
 ~~~
 {}{table}{conferences}
 Name | Location | Date | Extra ||
+[https://bmvc2017.london/ BMVC 2017 ]| London | 4-7 September 2017 | [http://www.talking-heads.eu/bmvc/ Lipreading workshop] ||
 [https://2017.icml.cc/ ICML 2017] | Sydney | 6-11 August 2017 | [https://2017.icml.cc/Conferences/2017/Schedule Accepted papers] ||
-[http://cvpr2017.thecvf.com/ CVPR 2017] | Honolulu | 22-26 July 2017 | [http://openaccess.thecvf.com/menu.py open access]
+[http://cvpr2017.thecvf.com/ CVPR 2017] | Honolulu | 22-26 July 2017 | [http://openaccess.thecvf.com/menu.py/ open access]
 ~~~
