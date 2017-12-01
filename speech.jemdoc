@@ -6,14 +6,19 @@
 ~~~
 {}{table}{conferences}
 Name | Location | Date  | Paper due||
-[http://www.waspaa.com/ WASPAA 2017] |  New York |  15-18 October 2017 | 20 April 2017 ||
-[https://www.beds.ac.uk/mmsp2017 MMSP 2017] | Bedfordshire | 16-18 October 2017 | 1 June 2017 ||
-[http://grammars.grlmc.com/SLSP2017/ SLSP 2017] | Le Mans | 23-25 October 2017 | 11 June 2017 ||
-[http://www.acmmm.org/2017/ ACM MM 2017] | Mountain View, CA | 23-27 October 2017 | 7 April 2017 ||
-[https://icmi.acm.org/2017/ ICMI 2017] |  Glasgow |  13-17 November 2017 | 12 May 2017 ||
-[http://asru2017.org/ ASRU 2017] |  Okinawa |  16-20 December 2017 | 29 June 2017 ||
-[https://spin2018.eu/ SpiN 2018] | Glasgow | 11-12 January 2018 | 29 October 2017 ||
-[https://2018.ieeeicassp.org/ ICASSP 2018] | Seoul | 22-27 April 2018 | 27 October 2017
+
+[http://asru2017.org/ ASRU 2017] |  Okinawa |  16-20 December 2017 | passed ||
+[https://spin2018.eu/ SpiN 2018] | Glasgow | 11-12 January 2018 | passed ||
+[https://2018.ieeeicassp.org/ ICASSP 2018] | Seoul | 15-20 April 2018 | passed ||
+[http://www.iwsds.org/ IWSDS 2018] | Singapore | 18-20 April 2018 | passed ||
+[http://iaria.org/conferences2018/SIGNAL18.html SIGNAL 2018] | Nice | 20-24 May 2018 | 3 January 2018 ||
+[https://ssp2018.org/ SSP 2018] | Freiburg | 10-13 June 2018 | 26 January 2018 ||
+[http://www.mee.tcd.ie/~sigmedia/UKSpeechConference2018 UK & Ireland Speech] | Dublin | 25-26 June 2018 | ||
+[http://www.ecomp.poli.br/~wcci2018/ijcnn-sessions/\#ijcnn4 IJCNN4 2018] | Rio de Janeiro | 8-13 July 2018 | 15 January 2018 ||
+[http://interspeech2018.org/ INTERSPEECH 2018] | Hyderabad | 2-6 September 2018 | 23 March 2018 ||
+[http://www.eusipco2018.org/index.php EUSIPCO 2018] | Rome | 3-7 September 2018 | 18 February 2018 ||
+[http://specom.nw.ru/ SPECOM 2018] | Leipzig | 18-22 September 2018 | 15 April 2018 ||
+[https://icmi.acm.org/2018/index.php?id=home ICMI 2018] | Boulder | 16-20 October 2018 | TBD
 ~~~
 
 == Past
@@ -21,6 +26,11 @@ Name | Location | Date  | Paper due||
 ~~~
 {}{table}{conferences}
 Name | Location | Date | Extra ||
+[https://icmi.acm.org/2017/ ICMI 2017] |  Glasgow |  13-17 November 2017 |  ||
+[http://www.acmmm.org/2017/ ACM MM 2017] | Mountain View, CA | 23-27 October 2017 |  ||
+[http://grammars.grlmc.com/SLSP2017/ SLSP 2017] | Le Mans | 23-25 October 2017 |  ||
+[https://www.beds.ac.uk/mmsp2017 MMSP 2017] | Bedfordshire | 16-18 October 2017 |  ||
+[http://www.waspaa.com/ WASPAA 2017] |  New York |  15-18 October 2017 |  ||
 [http://clef2017.clef-initiative.eu/ CLEF 2017] |  Dublin |  11-14 September 2017 |  ||
 [http://specom.nw.ru/ SPECOM 2017] | Hertfordshire | 12-16 September 2017 |  ||
 [http://www.talking-heads.eu/bmvc/ BMVCW Lipreading 2017] | London | 7 September 2017 |  ||
