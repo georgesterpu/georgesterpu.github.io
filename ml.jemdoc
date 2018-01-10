@@ -7,9 +7,14 @@
 ~~~
 {}{table}{conferences}
 Name | Location | Date  | Paper due||
-[http://iccv2017.thecvf.com/ ICCV 2017] | Venice | 22-29 October 2017 | passed ||
-[https://www.nips.cc NIPS 2017] | Long Beach, CA | 4-9 December 2017 | passed ||
-[https://eccv2018.org/ ECCV 2018] | Munich | 8-14 September 2018 | 14 March 2018
+[http://cvpr2018.thecvf.com/ CVPR 2018] | Salt Lake City | 18-22 June 2018 | passed ||
+[https://icml.cc/ ICML 2018] | Stockholm | 10-15 July 2018 | 9 February 2018 ||
+[https://www.ijcai-18.org/ IJCAI 2018] | Stockholm | 13-19 July 2018 | 31 January 2018 ||
+[http://bmvc2018.org/ BMVC 2018] | Newcastle | 3-6 September 2018 | 30 April 2018 ||
+[https://eccv2018.org/ ECCV 2018] | Munich | 8-14 September 2018 | 14 March 2018  ||
+[http://www.acmmm.org/2018/ ACM MM 2018] | Seoul | 22-26 October 2018 | 8 April 2018 ||
+[http://accv2018.net/ ACCV 2018] | Perth | 2-6 December 2018 | 5 July 2018 ||
+[https://nips.cc NIPS 2018] | Montreal | 3-8 December 2018 | 31 May 2018
 ~~~
 
 == Past
@@ -17,6 +22,8 @@ Name | Location | Date  | Paper due||
 ~~~
 {}{table}{conferences}
 Name | Location | Date | Extra ||
+[https://www.nips.cc NIPS 2017] | Long Beach, CA | 4-9 December 2017 |  ||
+[http://iccv2017.thecvf.com/ ICCV 2017] | Venice | 22-29 October 2017 |  ||
 [https://bmvc2017.london/ BMVC 2017 ]| London | 4-7 September 2017 | [http://www.talking-heads.eu/bmvc/ Lipreading workshop] ||
 [https://2017.icml.cc/ ICML 2017] | Sydney | 6-11 August 2017 | [https://2017.icml.cc/Conferences/2017/Schedule Accepted papers] ||
 [http://cvpr2017.thecvf.com/ CVPR 2017] | Honolulu | 22-26 July 2017 | [http://openaccess.thecvf.com/menu.py/ open access]
