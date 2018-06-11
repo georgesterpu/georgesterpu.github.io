@@ -1,0 +1,84 @@
+# jemdoc: addcss{./css/index.css}, menu{menu}{hpc_udocker.html}
+= Instructions for Tesla GPU nodes
+
+Would you like to use our computing node powered by Nvidia Tesla GPUs ? \n
+This short guide may be helpful to you. \n
+Many thanks to Graziano D'Innocenzo for his advice and support.
+Don't forget to check out the [https://sites.google.com/a/adaptcentre.ie/it-systems/ Adapt Wiki page] for more excellent resources.
+
+The guide uses Arch Linux as a working example. 
+
+=== Step 1
+We first request access to the GPU node:
+~~~
+{}{}
+salloc --reservation=v100 --partition=gpu-shared
+nvidia-cuda-mps-server
+~~~
+
+=== Step 2
+We are going to use a virtual environment managed by the +udocker+ tool:
+~~~
+{}{}
+mkdir ~/apps/; cd ~/apps/
+git clone https://github.com/indigo-dc/udocker.git
+cd udocker
+~~~
+
+=== Step 3
+We pull the official arch linux image, create a virtual container named +tf+ and run it, also mounting a directory with video drivers and toolkits: 
+~~~
+{}{}
+python2 udocker pull base/archlinux
+python2 udocker create --name=tf base/archlinux
+python2 udocker run --volume=/home/support/nvidia tf
+~~~
+
+=== Step 4
+We configure the package manager, making sure we are using the Irish mirror for a faster connection:
+~~~
+{}{}
+pacman -Syyu
+pacman -S vim
+vim /etc/pacman.d/mirrorlist
+# remove the default servers, then add:
+Server = https://ftp.heanet.ie/mirrors/ftp.archlinux.org/$repo/os/$arch
+
+pacman -S module-init-tools --force
+pacman -S gcc
+~~~
+
+=== Step 5
+We install the video driver, cuda and the cudnn toolkits:
+~~~
+{}{}
+cd /home/support/nvidia
+sh NVIDIA-Linux-x86_64-396.26.run --no-kernel-module
+sh cuda_9.0.176_384.81_linux-run --toolkit -silent --override
+cd cudnn
+tar -xvzf cudnn-9.0-linux-x64-v7.1.tgz -C /usr/local/
+~~~
+
+=== Step 6
+TensorFlow users may go ahead and install their favourite deep learning toolkit:
+~~~
+{}{}
+pacman -S python python-pip
+pip install tensorflow-gpu
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64/
+~~~
+
+=== Step 7
+Let's make sure that TensorFlow finds our GPUs:
+~~~
+{}{}
+python
+>>> import tensorflow as tf
+>>> tf.InteractiveSession()
+~~~
+
+That was it !
+
+At the time of this writing, the TensorFlow packages from +pip+ are still being built with support for Cuda 9.0.
+
+Suggestions are welcome.

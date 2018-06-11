@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="./css/index.css" type="text/css" />
+<title>Instructions for Tesla GPU nodes</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">main</div>
+<div class="menu-item"><a href="index.html">home</a></div>
+<div class="menu-item"><a href="publications.html">publications</a></div>
+<div class="menu-item"><a href="software.html">software</a></div>
+<div class="menu-item"><a href="about.html">about</a></div>
+<div class="menu-category">events</div>
+<div class="menu-item"><a href="speech.html">speech</a></div>
+<div class="menu-item"><a href="ml.html">ML</a></div>
+<div class="menu-category">links</div>
+<div class="menu-item"><a href="groups.html">research&nbsp;groups</a></div>
+<div class="menu-item"><a href="resources.html">resources</a></div>
+<div class="menu-item"><a href="opportunities.html">opportunities</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Instructions for Tesla GPU nodes</h1>
+</div>
+<p>Would you like to use our computing node powered by Nvidia Tesla GPUs ? <br />
+This short guide may be helpful to you. <br />
+Many thanks to Graziano D'Innocenzo for his advice and support.
+Don't forget to check out the <a href="https://sites.google.com/a/adaptcentre.ie/it-systems/">Adapt Wiki page</a> for more excellent resources.</p>
+<p>The guide uses Arch Linux as a working example. </p>
+<h3>Step 1</h3>
+<p>We first request access to the GPU node:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+salloc --reservation=v100 --partition=gpu-shared
+nvidia-cuda-mps-server
+</pre></div></div>
+<h3>Step 2</h3>
+<p>We are going to use a virtual environment managed by the <tt>udocker</tt> tool:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+mkdir ~/apps/; cd ~/apps/
+git clone https://github.com/indigo-dc/udocker.git
+cd udocker
+</pre></div></div>
+<h3>Step 3</h3>
+<p>We pull the official arch linux image, create a virtual container named <tt>tf</tt> and run it, also mounting a directory with video drivers and toolkits: </p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+python2 udocker pull base/archlinux
+python2 udocker create --name=tf base/archlinux
+python2 udocker run --volume=/home/support/nvidia tf
+</pre></div></div>
+<h3>Step 4</h3>
+<p>We configure the package manager, making sure we are using the Irish mirror for a faster connection:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+pacman -Syyu
+pacman -S vim
+vim /etc/pacman.d/mirrorlist
+# remove the default servers, then add:
+Server = https://ftp.heanet.ie/mirrors/ftp.archlinux.org/$repo/os/$arch
+
+pacman -S module-init-tools --force
+pacman -S gcc
+</pre></div></div>
+<h3>Step 5</h3>
+<p>We install the video driver, cuda and the cudnn toolkits:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+cd /home/support/nvidia
+sh NVIDIA-Linux-x86_64-396.26.run --no-kernel-module
+sh cuda_9.0.176_384.81_linux-run --toolkit -silent --override
+cd cudnn
+tar -xvzf cudnn-9.0-linux-x64-v7.1.tgz -C /usr/local/
+</pre></div></div>
+<h3>Step 6</h3>
+<p>TensorFlow users may go ahead and install their favourite deep learning toolkit:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+pacman -S python python-pip
+pip install tensorflow-gpu
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64/
+</pre></div></div>
+<h3>Step 7</h3>
+<p>Let's make sure that TensorFlow finds our GPUs:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+python
+&gt;&gt;&gt; import tensorflow as tf
+&gt;&gt;&gt; tf.InteractiveSession()
+</pre></div></div>
+<p>That was it !</p>
+<p>At the time of this writing, the TensorFlow packages from <tt>pip</tt> are still being built with support for Cuda 9.0.</p>
+<p>Suggestions are welcome.</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2018-06-11 20:03:28 IST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -25,3 +25,6 @@ Name | Venue | Date | keywords ||
 
 === 1. [hpc.html Using the TCD HPC Resources]
 === 2. [compile_tensorflow.html Compile TensorFlow from sources]
+=== 3. [hpc_udocker.html Instructions for Tesla GPU nodes]
+
+
