@@ -38,11 +38,9 @@ python2 udocker run --volume=/home/support/nvidia tf
 We configure the package manager, making sure we are using the Irish mirror for a faster connection:
 ~~~
 {}{}
+pacman -Syy
+echo 'Server = https://ftp.heanet.ie/mirrors/ftp.archlinux.org/$repo/os/$arch' > /etc/pacman.d/mirrorlist
 pacman -Syyu
-pacman -S vim
-vim /etc/pacman.d/mirrorlist
-# remove the default servers, then add:
-Server = https://ftp.heanet.ie/mirrors/ftp.archlinux.org/$repo/os/$arch
 
 pacman -S module-init-tools --force
 pacman -S gcc
