@@ -6,6 +6,8 @@ This short guide may be helpful to you. \n
 Many thanks to Graziano D'Innocenzo for his advice and support.
 Don't forget to check the [https://sites.google.com/a/adaptcentre.ie/it-systems/ Adapt Wiki page] for more excellent resources.
 
+*Update:* \[[https://github.com/georgesterpu/pkgbuilds/releases Latest TensorFlow compiled with support CUDA 9.2 for Tesla V100]]
+
 The guide uses Arch Linux as a working example. 
 
 === Step 1
