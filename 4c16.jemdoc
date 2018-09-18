@@ -19,4 +19,7 @@
 - Is there a built-in numpy function to compute the Vandermonde matrix ?
   -- Yes, please refer to [https://docs.scipy.org/doc/numpy/reference/generated/numpy.vander.html numpy.vander]
 
+- `ValueError: could not broadcast input array from shape (100,1) into shape (100)`
+  -- The code expects a one-dimensional array but the input is two-dimensional, having one dummy axis. Please refer to [https://docs.scipy.org/doc/numpy/reference/generated/numpy.squeeze.html numpy.squeeze]
+
 
