@@ -1,0 +1,22 @@
+# jemdoc: addcss{./css/index.css}, menu{menu}{4c16.html}
+= 4C16 Deep Learning
+
+== Frequently asked questions
+
+=== Lab 0
+
+- I cannot login on the computers in CADLAB for various reasons, what should I do ?
+  -- Kindly ask John Squires to create an account for you.
+  
+- I cannot login on the `turing.mee.tcd.ie` webpage, what should I do ?
+  -- Kindly ask anyone from the team to create an account for you.
+
+- Can I work from home ?
+  -- The `turing.mee.tcd.ie` webpage is hosted on a server in TCD without external access. One workaround is to download the assignment through the Jupyter notebook interface (you may want to zip/tar your work in advance from the command line) and configure your own work environment, installing the necessary packages. The lab assistants are happy to assist you, if required. 
+
+=== Lab 1
+
+- Is there a built-in numpy function to compute the Vandermonde matrix ?
+  -- Yes, please refer to [https://docs.scipy.org/doc/numpy/reference/generated/numpy.vander.html numpy.vander]
+
+
