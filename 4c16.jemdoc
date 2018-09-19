@@ -22,4 +22,5 @@
 - `ValueError: could not broadcast input array from shape (100,1) into shape (100)`
   -- The code expects a one-dimensional array but the input is two-dimensional, having one dummy axis. Please refer to [https://docs.scipy.org/doc/numpy/reference/generated/numpy.squeeze.html numpy.squeeze]
 
-
+- The instructions in the Jupyter notebook make reference to unrelated slides in the handout, where is the actual thing ?
+  -- The references make sense for an older version of the handout. We encourage you to identify the updated references on your own, as it improves your error resilience.
