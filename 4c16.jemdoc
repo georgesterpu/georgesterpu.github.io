@@ -30,6 +30,6 @@
 - `NameError: name 'lab_2' is not defined`, or `NameError: name 'lab_2' is not defined`
   -- Please remember to import the necessary modules in the Jupyter notebook by evaluating every cell from top to bottom.
   
-- The cross entropy formula on slide 20 does not scale the negative log likelihood by 1/N, should we use the the scaling factor ?
+- The cross entropy formula on slide 20 does not scale the negative log likelihood by 1/N, should we use the scaling factor ?
   -- Yes, the result is expected to be normalised by the number of observations.
   
