@@ -10,7 +10,7 @@ Boulder, CO, USA, October 2018.\n
 \[[https://arxiv.org/pdf/1809.01728.pdf pdf]\]
 \[[https://raw.githubusercontent.com/georgesterpu/georgesterpu.github.io/master/bibs/icmi2018.bib bibtex]]
 \[[https://github.com/georgesterpu/Sigmedia-AVSR code]]
-
+\n \n
 . *Can DNNs Learn to Lipread Full Sentences?*\n
 George Sterpu, Christian Saam, Naomi Harte.\n
 The 2018 IEEE International Conference on Image Processing (ICIP 2018).\n
@@ -18,8 +18,7 @@ Athens, Greece, October 2018.\n
 \[[https://arxiv.org/pdf/1805.11685.pdf pdf]\]
 \[[https://raw.githubusercontent.com/georgesterpu/georgesterpu.github.io/master/bibs/icip2018.bib bibtex]]
 \[[https://github.com/georgesterpu/Sigmedia-AVSR code]]
-
-
+\n \n
 . *Towards Lipreading Sentences using Active Appearance Models*\n
 George Sterpu and Naomi Harte.\n
 International Conference on Auditory-Visual Speech Processing (AVSP 2017).\n
@@ -27,5 +26,3 @@ Stockholm, Sweden, August 2017.\n
 \[[https://arxiv.org/pdf/1805.11688.pdf pdf]\]
 \[[https://raw.githubusercontent.com/georgesterpu/georgesterpu.github.io/master/bibs/avsp2017.bib bibtex]]
 \[[https://github.com/georgesterpu/pyVSR code]]
-
-
