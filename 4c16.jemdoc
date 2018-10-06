@@ -32,4 +32,11 @@
   
 - The cross entropy formula on slide 20 does not scale the negative log likelihood by 1/N, should we use the scaling factor ?
   -- Yes, the result is expected to be normalised by the number of observations.
-  
+
+=== Lab 3
+
+- I am confident that the answer for Question 3 is correct, why does the grader give a wrong answer ?
+  -- This is mistake in the handouts and will be fixed. The expected answer is a proportion (floating point value scaled from 0 to 1) rather than a percentage (0-100).
+
+- What does the `balanced` option mean in SVM classifiers ?
+  -- This is the default value for the `class_weight` parameter of the SVM implementation in sklearn. A detailed description of it can be found in the [http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html official documentation].
