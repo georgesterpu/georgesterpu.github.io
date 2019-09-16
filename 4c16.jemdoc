@@ -14,6 +14,9 @@
 - Can I work from home ?
   -- The `turing.mee.tcd.ie` webpage is hosted on a server in TCD without external access. One workaround is to download the assignment through the Jupyter notebook interface (you may want to zip/tar your work in advance from the command line) and configure your own work environment, installing the necessary packages. The lab assistants are happy to assist you, if required. 
 
+- I receive an error message when launching the terminal (e.g. cannot initialise the git repository), is this normal ?
+  -- No, this is a server-side error that occurs from time to time. One workaround is to restart your instance and/or use the "Reset tunnel" option on your dashboard.
+
 === Lab 1
 
 - Is there a built-in numpy function to compute the Vandermonde matrix ?
