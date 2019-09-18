@@ -28,6 +28,9 @@
 - The instructions in the Jupyter notebook make reference to unrelated slides in the handout, where is the actual thing ?
   -- The references make sense for an older version of the handout. We encourage you to identify the updated references on your own, as it improves your error resilience.
 
+- Evaluating the first cell in the Jupyter notebook returns a `SyntaxError: invalid syntax` on line 30 in lab_1.py
+  -- This is a problem in the lab template (lab_1.py), possibly creating a lot of confusion. To fix it on your side, comment line 39 to circumvent the syntax error until you actually need to implement the respective function (polynomial_design_matrix). A patch to the main repository has been submitted, fingers crossed !
+  
 === Lab 2
 
 - `NameError: name 'lab_2' is not defined`, or `NameError: name 'lab_2' is not defined`
