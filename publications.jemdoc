@@ -1,6 +1,13 @@
 # jemdoc: addcss{./css/index.css}, menu{menu}{publications.html}
 = Publications
 
+== Journals
+. *How to Teach DNNs to Pay Attention to the Visual Modality in Speech Recognition*\n
+George Sterpu, Christian Saam. Naomi Harte.\n
+IEEE/ACM Transactions on Audio, Speech, and Language Processing.\n
+\[[https://ieeexplore.ieee.org/document/9035650 url]\]
+\[[https://raw.githubusercontent.com/georgesterpu/georgesterpu.github.io/master/bibs/tasl2020.bib bibtex]]
+
 == Conferences, workshops
 
 . *Attention-based Audio-Visual Fusion for Robust Automatic Speech Recognition*\n
