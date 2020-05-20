@@ -3,14 +3,20 @@
 
 == Journals
 . *How to Teach DNNs to Pay Attention to the Visual Modality in Speech Recognition*\n
-George Sterpu, Christian Saam. Naomi Harte.\n
+George Sterpu, Christian Saam, Naomi Harte.\n
 IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2020.\n
 \[[https://raw.githubusercontent.com/georgesterpu/georgesterpu.github.io/master/papers/taslp2020.pdf pdf Accepted version]]
 \[[https://ieeexplore.ieee.org/document/9035650 IEEE version]\]
 \[[https://raw.githubusercontent.com/georgesterpu/georgesterpu.github.io/master/bibs/tasl2020.bib bibtex]]
 
-== Conferences, workshops
+== Conferences
 
+. *Should we hard-code the recurrence concept or learn it instead ?\n
+ Exploring the Transformer architecture for Audio-Visual Speech Recognition*\n
+George Sterpu, Christian Saam, Naomi Harte.\n
+Under review.\n
+\[[https://arxiv.org/pdf/2005.09297.pdf pdf]\]
+\n \n
 . *Attention-based Audio-Visual Fusion for Robust Automatic Speech Recognition*\n
 George Sterpu, Christian Saam, Naomi Harte.\n
 2018 International Conference on Multimodal Interaction (ICMI 2018).\n
