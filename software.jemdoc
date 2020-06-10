@@ -2,19 +2,18 @@
 = Software
 
 ~~~
-Our work is based on *free open-source* software.\n
-Development platform: *Manjaro* Linux, testing branch\n
+Our work is based on publicly available open-source software.\n
 Feedback is welcome !
 ~~~
 
-=== 1. [https://github.com/georgesterpu/pyVSR pyVSR]: Python toolkit for Visual Speech Recognition
+=== 1. [https://github.com/georgesterpu/Taris Taris]: Transformer-based online speech recognition system with TensorFlow 2.0
+
+
+=== 2. [https://github.com/georgesterpu/avsr-tf1 AVSR-tf1]: Audio-Visual Speech Recognition using Sequence to Sequence Models
+
+AVSR-tf1 aims to provide a simple and reproducible way of training and evaluating speech recognition models based on sequence to sequence neural networks. AVSR-tf1 can exploit both auditory and visual speech modalities, considered either independently (ASR, VSR) or together (AVSR). This repository implements the AV Align strategy for multimodal alignment and fusion of speech.
+
+=== 3. [https://github.com/georgesterpu/pyVSR pyVSR]: Python toolkit for Visual Speech Recognition
 
 pyVSR is a Python toolkit aimed at running Visual Speech Recognition (VSR) experiments in a traditional framework (e.g. handcrafted visual features, Hidden Markov Models for pattern recognition).
 
-The main goal of pyVSR is to easily reproduce VSR experiments in order to have a baseline result on most publicly available audio-visual datasets.
-
-=== 2. [https://github.com/georgesterpu/Sigmedia-AVSR Sigmedia-AVSR]: Audio-Visual Speech Recognition using Sequence to Sequence Models
-
-Sigmedia-AVSR is an open-source research system for Speech Recognition, developed by the Sigmedia team in Trinity College Dublin, Ireland.
-
-Written entirely in Python, Sigmedia-AVSR aims to provide a simple and reproducible way of training and evaluating speech recognition models based on sequence to sequence neural networks. Sigmedia-AVSR can exploit both auditory and visual speech modalities, considered either independently (ASR, VSR) or together (AVSR).
