@@ -14,6 +14,7 @@ IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2020.\n
 George Sterpu, Christian Saam, Naomi Harte.\n
 Under review.\n
 \[[https://github.com/georgesterpu/georgesterpu.github.io/raw/master/papers/gg2020.pdf pdf]\]
+\[[https://github.com/georgesterpu/Taris code]\]
 \n \n
 . *Should we hard-code the recurrence concept or learn it instead ?\n
  Exploring the Transformer architecture for Audio-Visual Speech Recognition*\n
@@ -36,7 +37,7 @@ The 2018 IEEE International Conference on Image Processing (ICIP 2018).\n
 Athens, Greece, October 2018.\n
 \[[https://arxiv.org/pdf/1805.11685.pdf pdf]\]
 \[[https://raw.githubusercontent.com/georgesterpu/georgesterpu.github.io/master/bibs/icip2018.bib bibtex]]
-\[[https://github.com/georgesterpu/Sigmedia-AVSR code]]
+\[[https://github.com/georgesterpu/avsr-tf1 code]]
 \[[./pics/seq2seq2.png diagram]]
 \n \n
 . *Towards Lipreading Sentences using Active Appearance Models*\n
