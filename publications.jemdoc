@@ -19,8 +19,9 @@ Under review.\n
 . *Should we hard-code the recurrence concept or learn it instead ?\n
  Exploring the Transformer architecture for Audio-Visual Speech Recognition*\n
 George Sterpu, Christian Saam, Naomi Harte.\n
-Under review.\n
+Interspeech 2020.\n
 \[[https://arxiv.org/pdf/2005.09297.pdf pdf]\]
+\[[https://raw.githubusercontent.com/georgesterpu/georgesterpu.github.io/master/bibs/interspeech2020.bib bibtex]]
 \[[https://github.com/georgesterpu/Taris code]\]
 \n \n
 . *Attention-based Audio-Visual Fusion for Robust Automatic Speech Recognition*\n
