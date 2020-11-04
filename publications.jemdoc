@@ -12,8 +12,8 @@ IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2020.\n
 == Conferences
 . *Learning to Count Words in Fluent Speech enables Online Speech Recognition*\n
 George Sterpu, Christian Saam, Naomi Harte.\n
-Under review.\n
-\[[https://arxiv.org/pdf/2006.04928.pdf pdf]\]
+IEEE Spoken Language Technology Workshop (SLT 2021).\n
+\[[https://arxiv.org/pdf/2006.04928.pdf preprint]\]
 \[[https://github.com/georgesterpu/Taris code]\]
 \n \n
 . *Should we hard-code the recurrence concept or learn it instead ?\n
