@@ -21,10 +21,10 @@ timezone: Europe/Dublin
 
 title: George Sterpu                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: My homepage   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  To be added.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://georgesterpu.github.io'
@@ -78,13 +78,14 @@ theme_mode: light  # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+#img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
 avatar: /img/profile_pic.jpg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
+
 
 comments:
   active:         # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
