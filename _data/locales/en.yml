@@ -3,14 +3,14 @@
 # ----- Commons label -----
 
 layout:
-  post: Post
+  post: Posts
   category: Category
   tag: Tag
 
 # The tabs of sidebar
 tabs:
-  # format: <filename_without_extension>: <value>
-  home: Home
+  #format: <filename_without_extension>: <value>
+  #home: Home
   categories: Categories
   tags: Tags
   archives: Archives
@@ -35,11 +35,9 @@ copyright:
     link: https://creativecommons.org/licenses/by/4.0/
 
   # Displayed in the footer
-  brief: Some rights reserved.
+  brief: ""
   verbose: >-
-    Except where otherwise noted, the blog posts on this site are licensed
-    under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.
-
+    
 meta: Using the :PLATFORM theme :THEME.
 
 not_found:
