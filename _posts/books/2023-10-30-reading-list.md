@@ -175,7 +175,7 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/breath.jpg" width="100">
 </div>
-> 
+> "That 30lb of air that passes through our lungs every day, and that 1.7lb of oxygen ourselves consume is as important as what we eat or how much we exercise. Breathing is a missing pillar of health."
 <div style="clear: both;"></div>
 
 
