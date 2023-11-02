@@ -183,28 +183,28 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/socialpsychology.jpg" width="100">
 </div>
-> 
+> "If you are proud of your group, you display your group membership publicly for all to see. If your group didn't do well, you now need to protect your self-esteem by distancing yourself from the group. It seems to be almost an automatic tendency to embrace or distance ourselves from things that boost or hurt our self-esteem respectively."
 <div style="clear: both;"></div>
 
 - **25. The Science of Love** by Dr Wind Goodfriend
 <div class="image-container">
 <img src="/img/book_covers/sciencelove.jpg" width="100">
 </div>
-> 
+> "People with growth beliefs when it comes to love believe that successful relationships evolve from the resolution of risks, challenges, and difficulties, rather than their absence."
 <div style="clear: both;"></div>
 
 - **26. The Psychology of Money** by Morgan Housel
 <div class="image-container">
 <img src="/img/book_covers/money.jpeg" width="100">
 </div>
-> 
+> "People tend to want wealth to signal to others that they should be liked and admired. But in reality those other people often bypass admiring you, not because they don’t think wealth is admirable, but because they use your wealth as a benchmark for their own desire to be liked and admired. If respect and admiration are your goal, be careful how you seek it. Humility, kindness, and empathy will bring you more respect than horsepower ever will."
 <div style="clear: both;"></div>
 
 - **27. The Power of Regret** by Daniel H Pink
 <div class="image-container">
 <img src="/img/book_covers/regret.jpg" width="100">
 </div>
-> 
+> "The consequences of actions are specific, concrete, and limited. The consequences of inaction are general, abstract, and unbounded. Inactions incubate endless speculations."
 <div style="clear: both;"></div>
 
 
