@@ -168,7 +168,7 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/outlive.jpg" width="100">
 </div>
-> 
+> "Longevity was basically an engineering problem, or so I thought. What I eventually realised is that longevity is meaningless if your life sucks, or if your relationships suck. Your resume doesn't really matter either when it comes time for your eulogy. I wanted to live longer only because deep down I knew I needed more runway to try to make things right."
 <div style="clear: both;"></div>
 
 - **23. Breath** by James Nestor
