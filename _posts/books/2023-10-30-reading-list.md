@@ -48,7 +48,7 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/sweat.webp" width="100">
 </div>
-> 
+> "Maybe so... maybe not!"
 <div style="clear: both;"></div>
 
 - **6. Change your life in 7 days** by Paul McKenna
@@ -207,15 +207,15 @@ Books read
 > "The consequences of actions are specific, concrete, and limited. The consequences of inaction are general, abstract, and unbounded. Inactions incubate endless speculations."
 <div style="clear: both;"></div>
 
-
-In Progress
-===========
-- **Lost Connections** by Johann Hari
+- **28. Lost Connections** by Johann Hari
 <div class="image-container">
 <img src="/img/book_covers/lost.jpg" width="100">
 </div>
 > "Depression isn't a disease. Depression is a normal response to abnormal life experiences."
 <div style="clear: both;"></div>
+
+In Progress
+===========
 
 - **Steve Jobs** by Walter Isaacson
 <div class="image-container">
