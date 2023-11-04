@@ -21,7 +21,7 @@ Books read
 
 - **1. Open** by Andre Agassi  
 <div class="image-container"> <img src="/img/book_covers/open.jpg" width="100"> </div>
->  
+> "- So I need to tell you, I just need to say before we  go any further, that I think you are beautiful. I respect you, I admire you, and I would absolutely love to get to know you better. That's my goal. That's my only agenda. That's where I am. Tell me this is possible. Tell me we can go to dinner. <br> - No"
 <div style="clear: both;"></div>
 
 - **2. Dopamine Nation** by Dr Anna Lembke
@@ -111,8 +111,8 @@ Books read
 - **14. A Survival Guide for Life** by Bear Grylls
 <div class="image-container">
 <img src="/img/book_covers/survival.jpg" width="100">
-</div>
-> 
+</div> 
+> "But when I reached the end checkpoint I was told I had been failed - I had been too slow. I was sent off to make camp in the woods and rest for the night. That night in those woods, warm and dry under my shelter, blisters attended to, dry socks on, and out of the wind and rain, I learnt an enduring lesson: warm and dry doesn't mean fulfilled and happy. Never has anyone wanted to be cold, wet and tired as much as I did right then. And never have the comforts of shelter and food meant so little to me. Being dry and warm in life, but with no purpose, is no consolation for being in the heat of the arena in pursuit of your goals."
 <div style="clear: both;"></div>
 
 - **15. Gravitas** by Garoline Goyder
@@ -133,7 +133,7 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/introvert.jpg" width="100">
 </div>
->  
+> "If you hate what you do, no amount of networking strategy and insights are going to make up for the fact that you fundamentally don’t want to be doing what you’re doing, working toward a goal you don’t really want, meeting people you don’t really care to know. Networking success starts with finding what sparks excitement in you, then connecting it with what you currently do or want to be doing. If you have that—if you’re networking from a place of passion—you’re already miles ahead of your competition."
 <div style="clear: both;"></div>
 
 - **18. Finding your Purpose** by Christine Whelan
@@ -161,7 +161,7 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/whynobody.jpg" width="100">
 </div>
-> 
+> "Thoughts are not facts. They are guesses, stories, memories, ideas, and theories. They are a construct offered to you by your brain as one potential explanation for the sensations you are experiencing right now. They are so heavily influenced by your physical state, by each of your senses, and by your memories of past experience. Emotions are real and valid, but they are not facts."
 <div style="clear: both;"></div>
 
 - **22. Outlive** by Dr Peter Attia
