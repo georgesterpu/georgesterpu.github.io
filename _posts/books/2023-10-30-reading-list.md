@@ -224,6 +224,12 @@ In Progress
 > 
 <div style="clear: both;"></div>
 
+- **We Don't Know Ourselves: A Personal History of Modern Ireland** by Fintan O'Toole
+<div class="image-container">
+<img src="/img/book_covers/ireland1958.jpg" width="100">
+</div>
+> 
+<div style="clear: both;"></div>
 
 On the Shelf
 ============
