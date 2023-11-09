@@ -12,3 +12,4 @@
 *.jpg binary
 *.ico binary
 img/running filter=lfs diff=lfs merge=lfs -text
+img/book_covers/ filter=lfs diff=lfs merge=lfs -text
