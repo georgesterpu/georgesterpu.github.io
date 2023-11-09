@@ -1,7 +1,7 @@
 ---
 title: Under construction
-categories: [new, new2]
-tags: [new, new2]
+categories: []
+tags: []
 ---
 
 # Hello World
