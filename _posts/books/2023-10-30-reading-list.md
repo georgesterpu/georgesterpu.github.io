@@ -254,4 +254,3 @@ On the Shelf
 </div>
 > 
 <div style="clear: both;"></div>
-
