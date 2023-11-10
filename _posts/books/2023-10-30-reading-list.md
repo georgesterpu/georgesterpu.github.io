@@ -228,7 +228,7 @@ In Progress
 <div class="image-container">
 <img src="/img/book_covers/stevejobs.jpg" width="100" alt="image unavailable">
 </div>
-> 
+> "The best way to predict the future is to invent it - Alan Key"
 <div style="clear: both;"></div>
 
 - **Grown Ups** by Marian Keyes
