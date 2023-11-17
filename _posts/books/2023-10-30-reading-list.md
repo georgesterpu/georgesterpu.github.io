@@ -221,15 +221,28 @@ Books read
 > "The fear that stalked so many Irish artists and intellectuals in the 1960s and 1970s – that Ireland would disappear as a distinctive cultural space – was misplaced. In 1958, and for many decades afterwards, there was this sense that, if it did not pretend to know itself thoroughly and absolutely, Ireland would not exist at all. Perhaps we are learning to live without being so defined. Maybe Ireland has reached the point of accepting that half-knowledge is better than the swinging between the pretence of knowing everything and the denial of what you really do know. Now, it is a more positive idea: there need not be a single, knowable future."
 <div style="clear: both;"></div>
 
-In Progress
-===========
-
-- **Steve Jobs** by Walter Isaacson
+- **30. Steve Jobs** by Walter Isaacson
 <div class="image-container">
 <img src="/img/book_covers/stevejobs.jpg" width="100" alt="image unavailable">
 </div>
-> "The best way to predict the future is to invent it - Alan Key"
+> - "The best way to predict the future is to invent it - Alan Key"
+> - "If he knew for sure a course of action was right, he was unstoppable. But if he had doubts, he sometimes withdrew, preferring not to think about things that did not perfectly suit him"
+> - "Deciding what not to do is as important as deciding what to do"
+> - "People who know what they're talking about don't need Power Point"
+> - "Our goal is not just to make money, but to make great products"
+> - "The mark of an innovative company is not only that it comes up with new ideas first, but also that it knows how to leapfrog when it finds itself behind"
+> - "If you don't love something, you are not going to go the extra mile, work the extra weekend, challenge the status quo as much"
+> - "Nobody is eager for a lecture, but everybody loves a story"
+> - "The innovator's dilemma - people who invent something are usually the last ones to see past it"
+> - "If you want to allow your products to be open to other hardware or software, you have to give up some of your vision"
+> - "The company does a great job, innovates, and becomes a monopoly or close to it in some field, and then the quality of the product becomes less important. The company starts valuing the great salesmen, because they are the ones who can move the needle on revenues, not the product engineers and designers. So the sales people end up running the company"
+> - "If you are not busy being born, you are busy dying - Bob Dylan"
 <div style="clear: both;"></div>
+
+In Progress
+===========
+
+
 
 - **Grown Ups** by Marian Keyes
 <div class="image-container">
