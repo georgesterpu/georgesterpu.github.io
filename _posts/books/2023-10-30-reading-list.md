@@ -239,11 +239,12 @@ Books read
 > "If you are not busy being born, you are busy dying - Bob Dylan"
 <div style="clear: both;"></div>
 
-- **The 6 Habits of Growth** by  Brendon Burchard
+- **31. The 6 Habits of Growth** by  Brendon Burchard
 <div class="image-container">
 <img src="/img/book_covers/habits_growth.jpg" width="100" alt="image unavailable">
 </div>
-> 
+> "Your present circumstances aren't a cage. The only cage is in your mind." ; "One of the most powerful things you will do in your entire lifetime is to determine your own worth by yourself."
+> "Self-doubt is not a signal to stop, it is a signal to learn."
 <div style="clear: both;"></div>
 
 In Progress
