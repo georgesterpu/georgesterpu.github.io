@@ -27,7 +27,7 @@ Books read
 - **2. Dopamine Nation** by Dr Anna Lembke
 <div class="image-container">
 <img src="/img/book_covers/dopamine.jpg" width="100" alt="image unavailable"></div>
-> 
+> "The relentless pursuit of pleasure (and the avoidance of pain) leads to pain"
 <div style="clear: both;"></div>
 
 - **3. Atomic Habits** by James Clear
@@ -41,7 +41,7 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/4000.jpeg" width="100" alt="image unavailable">
 </div>
-> 
+> "The assumption that time is something we can possess or control is the unspoken premise of almost all our thinking about the future, our planning and goal-setting and worrying. So it's a constant source of anxiety and agitation, because our expectations are forever running up against the stubborn reality that time isn't in our possession and can't be brought under our control. Whatever you value most about your life can always be traced back to some jumble of chance occurrences you couldn't possibly have planned for."
 <div style="clear: both;"></div>
 
 - **5. Don't Sweat the Small Stuff** by Richard Carlson
@@ -84,7 +84,7 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/howtofail.jpg" width="100" alt="image unavailable">
 </div>
-> 
+> "For the first time in my life, I had to learn that rejection was not necessarily a personal indictment of who I was, but a result of the infinite nuances of what the other person was going through, which in turn was the consequence of an intricate chain of events, shaped by their own experiences and their own family dynamics and past relationships, that had literally nothing to do with me."
 <div style="clear: both;"></div>
 
 - **11. The subltle art of not giving a f*ck** by Mark Manson
