@@ -55,7 +55,7 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/change.jpg" width="100" alt="image unavailable">
 </div>
-> 
+> "You are constantly letting other people know how to treat you by the way you treat yourself."
 <div style="clear: both;"></div>
 
 
@@ -63,21 +63,21 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/5steps.jpg" width="100" alt="image unavailable">
 </div>
-> 
+> "The skill of a happy life is in learning how to cope with the instability, uncertainty, insecurity and disorder of life without getting anxious. We need to accept being discontent in lesser things in oder to be content in greater things."
 <div style="clear: both;"></div>
 
 - **8. 12 Rules for Life** by Dr Jordan B Peterson
 <div class="image-container">
 <img src="/img/book_covers/12rules.jpg" width="100" alt="image unavailable">
 </div>
-> 
+> "It is not virtuous to be victimised by a bully, even if that bully is oneself. To treat yourself as if you were someone you are responsible for helping is, instead, to consider what would be truly good for you. This is not 'what you want'. It is also not 'what would make you happy'. 'Happy' is by no means synonymous with 'good'."
 <div style="clear: both;"></div>
 
 - **9. Self-Acceptance** by Dr Harry Barry
 <div class="image-container">
 <img src="/img/book_covers/selfacceptance.jpg" width="100" alt="image unavailable">
 </div>
-> 
+> "One of the short cuts to developing unconditional self-acceptance, especially if you are a low self-rater, is to challenge your internal critic. It is difficult to challenge it in your emotional mind. But on writing down its comments on paper, your logical mind can now challenge the contents."
 <div style="clear: both;"></div>
 
 - **10. How to Fail** by Elisabeth Day
@@ -91,7 +91,7 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/subtleart.jpg" width="100" alt="image unavailable">
 </div>
-> 
+> "They say that a butterfly flapping its wings in Afica can cause a hurricane in Florida; well, what hurricanes will you leave in your wake?"
 <div style="clear: both;"></div>
 
 - **12. The Rules of Management** by Richard Templar
