@@ -16,3 +16,4 @@ img/book_covers/ filter=lfs diff=lfs merge=lfs
 img/ filter=lfs diff=lfs merge=lfs -text
 img/book_covers/habits_growth.jpg filter=lfs diff=lfs merge=lfs -text
 img/book_covers/friendship.jpg filter=lfs diff=lfs merge=lfs -text
+img/book_covers/* filter=lfs diff=lfs merge=lfs -text
