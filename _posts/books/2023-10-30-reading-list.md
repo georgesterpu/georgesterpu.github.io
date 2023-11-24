@@ -239,12 +239,20 @@ Books read
 > "If you are not busy being born, you are busy dying - Bob Dylan"
 <div style="clear: both;"></div>
 
-- **31. The 6 Habits of Growth** by  Brendon Burchard
+- **31. The 6 Habits of Growth** by Brendon Burchard
 <div class="image-container">
 <img src="/img/book_covers/habits_growth.jpg" width="100" alt="image unavailable">
 </div>
 > "Your present circumstances aren't a cage. The only cage is in your mind." ; "One of the most powerful things you will do in your entire lifetime is to determine your own worth by yourself."
 > "Self-doubt is not a signal to stop, it is a signal to learn."
+<div style="clear: both;"></div>
+
+- **32. Science of Friendship** by Kyler Shumway
+
+<div class="image-container">
+<img src="/img/book_covers/friendship.jpg" width="100" alt="image unavailable">
+</div>
+> "If you met your soulmate for the first time today, would they want to be with you? What I didn't know then, that I know, is that the thing that needed to change was not, in fact, my appearance, or my charm. Instead, what needed to change was the anticipation of rejection. I believed that my soulmate would not accept me for who I was, because I did not accept myself."
 <div style="clear: both;"></div>
 
 In Progress
