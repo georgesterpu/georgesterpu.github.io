@@ -255,10 +255,16 @@ Books read
 > "If you met your soulmate for the first time today, would they want to be with you? What I didn't know then, that I know, is that the thing that needed to change was not, in fact, my appearance, or my charm. Instead, what needed to change was the anticipation of rejection. I believed that my soulmate would not accept me for who I was, because I did not accept myself."
 <div style="clear: both;"></div>
 
+- **33. Power Moves: Lessons from Davos** by Adam Grant
+
+<div class="image-container">
+<img src="/img/book_covers/power.jpg" width="100" alt="image unavailable">
+</div>
+> "Gaining influence and authority frees us up to show our true colours, to act on our real wishes. It releases us from the shackles of social pressure. Power disinhibits us - it's like an amplifier. Whoever we were before comes out louder. Nothing discloses real character like the use of power. If you wish to know what a man really is, give them power."
+<div style="clear: both;"></div>
+
 In Progress
 ===========
-
-
 
 - **Grown Ups** by Marian Keyes
 <div class="image-container">
