@@ -273,6 +273,14 @@ In Progress
 > 
 <div style="clear: both;"></div>
 
+- **Greenlights** by Matthew McConaughey
+<div class="image-container">
+<img src="/img/book_covers/greenlights.jpg" width="100" alt="image unavailable">
+</div>
+> 
+<div style="clear: both;"></div>
+
+
 On the Shelf
 ============
 
@@ -290,4 +298,23 @@ On the Shelf
 > 
 <div style="clear: both;"></div>
 
+- **Trespasses** by Louise Kennedy
+<div class="image-container">
+<img src="/img/book_covers/trespasses.jpg" width="100" alt="image unavailable">
+</div>
+> 
+<div style="clear: both;"></div>
 
+- **Start with Why** by Simon Sinek
+<div class="image-container">
+<img src="/img/book_covers/why.jpg" width="100" alt="image unavailable">
+</div>
+> 
+<div style="clear: both;"></div>
+
+- **Think like a Monk** by Jay Shetty
+<div class="image-container">
+<img src="/img/book_covers/monk.jpg" width="100" alt="image unavailable">
+</div>
+> 
+<div style="clear: both;"></div>
