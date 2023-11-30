@@ -263,6 +263,13 @@ Books read
 > "Gaining influence and authority frees us up to show our true colours, to act on our real wishes. It releases us from the shackles of social pressure. Power disinhibits us - it's like an amplifier. Whoever we were before comes out louder. Nothing discloses real character like the use of power. If you wish to know what a man really is, give them power."
 <div style="clear: both;"></div>
 
+- **34. Greenlights** by Matthew McConaughey
+<div class="image-container">
+<img src="/img/book_covers/greenlights.jpg" width="100" alt="image unavailable">
+</div>
+> "We don't live longer when we try not to die, we live longer when we're too busy living."
+<div style="clear: both;"></div>
+
 In Progress
 ===========
 
@@ -273,12 +280,7 @@ In Progress
 > 
 <div style="clear: both;"></div>
 
-- **Greenlights** by Matthew McConaughey
-<div class="image-container">
-<img src="/img/book_covers/greenlights.jpg" width="100" alt="image unavailable">
-</div>
-> 
-<div style="clear: both;"></div>
+
 
 
 On the Shelf
