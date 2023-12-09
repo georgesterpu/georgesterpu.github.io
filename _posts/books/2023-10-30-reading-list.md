@@ -270,6 +270,28 @@ Books read
 > "We don't live longer when we try not to die, we live longer when we're too busy living."
 <div style="clear: both;"></div>
 
+- **35. Oversubscribed** by Daniel Priestley
+<div class="image-container">
+<img src="/img/book_covers/oversubscribed.jpg" width="100" alt="image unavailable">
+</div>
+> "People don't buy what others want to sell, they buy what others want to buy."
+<div style="clear: both;"></div>
+
+- **36. Glucose Revolution** by Jessie Inchauspe
+<div class="image-container">
+<img src="/img/book_covers/glucose.jpg" width="100" alt="image unavailable">
+</div>
+> "If you eat the items of a meal containing starch, fiber, sugar, protein, and fat in a specific order, you reduce your overall glucose spike by 73%, as well as your insulin spike by 48%."
+<div style="clear: both;"></div>
+
+- **37. Everything I Know About Love** by Dolly Alderton
+<div class="image-container">
+<img src="/img/book_covers/everything.jpg" width="100" alt="image unavailable">
+</div>
+> "To choose to love is to take a risk, always - that's why it's called falling. A much underrated and incredibly simple considering factor when it comes to choosing a partner is how much you love their company."
+<div style="clear: both;"></div>
+
+
 In Progress
 ===========
 
