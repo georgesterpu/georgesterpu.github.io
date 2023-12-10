@@ -288,7 +288,7 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/everything.jpg" width="100" alt="image unavailable">
 </div>
-> "To choose to love is to take a risk, always - that's why it's called falling. A much underrated and incredibly simple considering factor when it comes to choosing a partner is how much you love their company."
+> "To choose to love is to take a risk. Always. That's why it's called falling. A much underrated and incredibly simple considering factor when it comes to choosing a partner is how much you love their company."
 <div style="clear: both;"></div>
 
 
