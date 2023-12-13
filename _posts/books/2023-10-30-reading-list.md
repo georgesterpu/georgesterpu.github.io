@@ -291,6 +291,12 @@ Books read
 > "To choose to love is to take a risk. Always. That's why it's called falling. A much underrated and incredibly simple considering factor when it comes to choosing a partner is how much you love their company."
 <div style="clear: both;"></div>
 
+- **38. Can't Hurt Me** by David Goggings
+<div class="image-container">
+<img src="/img/book_covers/canthurtme.jpg" width="100" alt="image unavailable">
+</div>
+> "The kid I always judged so harshly didn't lie and cheat to hurt anyone's feelings. He did it for acceptance. He broke the rules because he didn't have the tools to compete. He did it because he needed friends. Instead of coming down on that kid for one more second, instead of chastising my younger self, I understood him for the first time. I lived in fear and doubt, terrified of being a nobody and contributing nothing. I judged myself constantly, and I judged everyone else too."
+<div style="clear: both;"></div>
 
 In Progress
 ===========
