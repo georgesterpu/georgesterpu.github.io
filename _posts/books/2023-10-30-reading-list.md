@@ -298,6 +298,27 @@ Books read
 > "The kid I always judged so harshly didn't lie and cheat to hurt anyone's feelings. He did it for acceptance. He broke the rules because he didn't have the tools to compete. He did it because he needed friends. Instead of coming down on that kid for one more second, instead of chastising my younger self, I understood him for the first time. I lived in fear and doubt, terrified of being a nobody and contributing nothing. I judged myself constantly, and I judged everyone else too."
 <div style="clear: both;"></div>
 
+- **39. Ultra-Processed People** by Chris Van Tulleken
+<div class="image-container">
+<img src="/img/book_covers/upf.jpg" width="100" alt="image unavailable">
+</div>
+> "UPF is, in general, soft. This means you eat it fast, which means you eat far more calories per minute, and you don't feel full until long after you finished. It also potentially reduces facial bone size and bone density, leading to dental problems. Second, UPF typically has a very high calorie density because it is dry, and high in fat and sugar, and low in fiber, so you get more calories per mouthful. Third, it displaces diverse whole foods from the diet, especially among low income groups. An UPF itself is often micronutrient deficient, which may also contribute to excess consumption. Fourth, those mismatches between taste signals from the mouth, and the nutrition content that arrives in the gut alters metabolism and appetite in ways that we are only beginning to understand, but that seem to drive excess consumption. Fifth, UPF is addictive, meaning that for some people, binges are unavoidable. Sixth, the emulsifiers, preservatives, modified starches and other additives damage our microbiomes, allowing inflamatory bacteria to flourish, and causing our guts to leak. Seventh, the convenience, price, and marketing of UPF urges us to eat constantly and without fault, which leads to more snacking, less chewing, faster eating, and increased consumption and tooth decay. Eighth, the additives and physical processing mean that UPF affect our satiety system directly, and other additives may affect brain and endocrine function, and plastics from the packaging might affect fertility. And ninth, the production methods used to make UPF require expensive subsidy, and drive environmental destruction, carbon emissions, and plastic pollution, which harms us all."
+<div style="clear: both;"></div>
+
+- **40. How to Own the Room** by Viv Groskop
+<div class="image-container">
+<img src="/img/book_covers/owntheroom.jpg" width="100" alt="image unavailable">
+</div>
+> "Putting yourself in low pressure situations where you can rehearse improvisation and making it up as you go along is the only thing that will prepare you for real leadership. Don't wait until you are ready, do it when you are not ready."
+<div style="clear: both;"></div>
+
+- **41.What They Don't Teach You About Money** by Claer Barrett
+<div class="image-container">
+<img src="/img/book_covers/teachmoney.jpg" width="100" alt="image unavailable">
+</div>
+> "What does financial independence really mean? Ultimately it is about finding a balance between these three things. #1: time spent adding money, and finding meaningful work that engages you, although this may not be the highest paid option. #2: spending your money on things and with people that you love. And #3: being able to put something aside for tomorrow."
+<div style="clear: both;"></div>
+
 In Progress
 ===========
 
