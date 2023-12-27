@@ -319,6 +319,13 @@ Books read
 > "What does financial independence really mean? Ultimately it is about finding a balance between these three things. #1: time spent adding money, and finding meaningful work that engages you, although this may not be the highest paid option. #2: spending your money on things and with people that you love. And #3: being able to put something aside for tomorrow."
 <div style="clear: both;"></div>
 
+- **42.The Boy, The Mole, The Fox and The Horse** by Charlie Mackesy
+<div class="image-container">
+<img src="/img/book_covers/theboy.jpg" width="100" alt="image unavailable">
+</div>
+> "One of our greatest freedoms is how we react to things. Isn't it odd. We can only see our outsides, but nearly everything happens on the inside."
+<div style="clear: both;"></div>
+
 In Progress
 ===========
 
