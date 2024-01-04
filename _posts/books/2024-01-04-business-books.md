@@ -1,7 +1,7 @@
 ---
 title: Business Books
-categories: [books, reading]
-tags: [books]
+categories: [books, business]
+tags: [books, business]
 ---
 
 <style>
