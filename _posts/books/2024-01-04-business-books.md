@@ -62,15 +62,22 @@ Business books reading list
 </div>
 <div style="clear: both;"></div>
 
+- **The Ride of a Lifetime** by Robert Iger
+<div class="image-container">
+<img src="/img/book_covers/rideofalifetime.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
 
-On the shelf
-============
 
 - **The Lean Startup** by Eric Ries
 <div class="image-container">
 <img src="/img/book_covers/leanstartup.jpg" width="100" alt="image unavailable">
 </div>
 <div style="clear: both;"></div>
+
+On the shelf
+============
+
 
 - **Creativity, Inc.** by  Ed Catmull
 <div class="image-container">
@@ -96,12 +103,6 @@ Not bought yet
 - **Never Split the Difference** by Chris Voss
 <div class="image-container">
 <img src="/img/book_covers/neversplit.jpg" width="100" alt="image unavailable">
-</div>
-<div style="clear: both;"></div>
-
-- **The Ride of a Lifetime** by Robert Iger
-<div class="image-container">
-<img src="/img/book_covers/rideofalifetime.jpg" width="100" alt="image unavailable">
 </div>
 <div style="clear: both;"></div>
 
