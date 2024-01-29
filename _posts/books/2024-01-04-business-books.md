@@ -75,6 +75,13 @@ Business books reading list
 </div>
 <div style="clear: both;"></div>
 
+
+- **Never Split the Difference** by Chris Voss
+<div class="image-container">
+<img src="/img/book_covers/neversplit.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
 On the shelf
 ============
 
@@ -97,18 +104,11 @@ On the shelf
 </div>
 <div style="clear: both;"></div>
 
-Not bought yet
-==============
-
-- **Never Split the Difference** by Chris Voss
-<div class="image-container">
-<img src="/img/book_covers/neversplit.jpg" width="100" alt="image unavailable">
-</div>
-<div style="clear: both;"></div>
-
-
 - **How to Talk to Anyone** by Leil Lowndes
 <div class="image-container">
 <img src="/img/book_covers/howtotalk.jpg" width="100" alt="image unavailable">
 </div>
 <div style="clear: both;"></div>
+
+
+
