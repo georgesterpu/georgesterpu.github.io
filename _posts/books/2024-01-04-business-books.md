@@ -82,6 +82,12 @@ Business books reading list
 </div>
 <div style="clear: both;"></div>
 
+- **The Infinite Game** by Simon Sinek
+<div class="image-container">
+<img src="/img/book_covers/infinite.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
 On the shelf
 ============
 
