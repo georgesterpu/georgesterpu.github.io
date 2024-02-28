@@ -88,6 +88,18 @@ Business books reading list
 </div>
 <div style="clear: both;"></div>
 
+- **Find Your Why** by Simon Sinek
+<div class="image-container">
+<img src="/img/book_covers/findyourwhy.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+- **The Diary of a CEO** by Steven Bartlett
+<div class="image-container">
+<img src="/img/book_covers/diaryceo.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
 On the shelf
 ============
 
