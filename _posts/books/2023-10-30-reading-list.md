@@ -91,7 +91,7 @@ Books read
 <div class="image-container">
 <img src="/img/book_covers/subtleart.jpg" width="100" alt="image unavailable">
 </div>
-> "They say that a butterfly flapping its wings in Afica can cause a hurricane in Florida; well, what hurricanes will you leave in your wake?"
+> "They say that a butterfly flapping its wings in Africa can cause a hurricane in Florida; well, what hurricanes will you leave in your wake?"
 <div style="clear: both;"></div>
 
 - **12. The Rules of Management** by Richard Templar
