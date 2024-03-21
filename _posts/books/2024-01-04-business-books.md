@@ -100,6 +100,12 @@ Business books reading list
 </div>
 <div style="clear: both;"></div>
 
+- **This is Marketing** by Seth Godin
+<div class="image-container">
+<img src="/img/book_covers/thisismarketing.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
 On the shelf
 ============
 
