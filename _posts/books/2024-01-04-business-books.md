@@ -116,12 +116,6 @@ On the shelf
 ============
 
 
-- **Creativity, Inc.** by  Ed Catmull
-<div class="image-container">
-<img src="/img/book_covers/creativity.jpg" width="100" alt="image unavailable">
-</div>
-<div style="clear: both;"></div>
-
 - **How to Be a Power Connector** by  Judy Robinett
 <div class="image-container">
 <img src="/img/book_covers/powerconnector.jpg" width="100" alt="image unavailable">
