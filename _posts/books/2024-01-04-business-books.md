@@ -106,6 +106,12 @@ Business books reading list
 </div>
 <div style="clear: both;"></div>
 
+- **Creativity, Inc.** by  Ed Catmull
+<div class="image-container">
+<img src="/img/book_covers/creativity.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
 On the shelf
 ============
 
