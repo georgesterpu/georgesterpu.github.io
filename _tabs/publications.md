@@ -39,14 +39,14 @@ Interspeech 2020.
 Boulder, CO, USA, October 2018.
 [arXiv](https://arxiv.org/pdf/1809.01728.pdf)
 [code](https://github.com/georgesterpu/Sigmedia-AVSR)
-[diagram](../img/full_av_fusion_diagram_icmidc.pdf)
+[diagram](../img/articles/full_av_fusion_diagram_icmidc.pdf)
 
 4. **George Sterpu**, Christian Saam, Naomi Harte. *Can DNNs Learn to Lipread Full Sentences?*
 The 2018 IEEE International Conference on Image Processing (ICIP 2018).
 Athens, Greece, October 2018.
 [arXiv](https://arxiv.org/pdf/1805.11685.pdf)
 [code](https://github.com/georgesterpu/avsr-tf1)
-[diagram](../img/seq2seq2.png)
+[diagram](../img/articles/seq2seq2.png)
 
 5. **George Sterpu** and Naomi Harte. *Towards Lipreading Sentences using Active Appearance Models*
 International Conference on Auditory-Visual Speech Processing (AVSP 2017).
