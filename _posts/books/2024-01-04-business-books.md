@@ -106,9 +106,15 @@ Business books reading list
 </div>
 <div style="clear: both;"></div>
 
-- **Creativity, Inc.** by  Ed Catmull
+- **Creativity, Inc.** by Ed Catmull
 <div class="image-container">
 <img src="/img/book_covers/creativity.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+- **Principles** by Ray Dalio
+<div class="image-container">
+<img src="/img/book_covers/principles.jpg" width="100" alt="image unavailable">
 </div>
 <div style="clear: both;"></div>
 
