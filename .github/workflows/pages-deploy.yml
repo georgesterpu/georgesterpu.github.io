@@ -40,6 +40,7 @@ jobs:
         uses: calibreapp/image-actions@main
         with:
           jpegQuality: 80
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
   
       - name: Setup Pages
         id: pages
