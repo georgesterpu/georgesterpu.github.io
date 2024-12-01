@@ -118,19 +118,9 @@ Business books reading list
 </div>
 <div style="clear: both;"></div>
 
-On the shelf
-============
-
-
 - **How to Be a Power Connector** by  Judy Robinett
 <div class="image-container">
 <img src="/img/book_covers/powerconnector.jpg" width="100" alt="image unavailable">
-</div>
-<div style="clear: both;"></div>
-
-- **Emotion by Design** by Greg Hoffman 
-<div class="image-container">
-<img src="/img/book_covers/emotion.jpg" width="100" alt="image unavailable">
 </div>
 <div style="clear: both;"></div>
 
@@ -139,6 +129,89 @@ On the shelf
 <img src="/img/book_covers/howtotalk.jpg" width="100" alt="image unavailable">
 </div>
 <div style="clear: both;"></div>
+
+- **Don't Make Me Think** by Steve Krug
+<div class="image-container">
+<img src="/img/book_covers/dontmakemethink.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+- **Clean Agile** by Robert C. Martin
+<div class="image-container">
+<img src="/img/book_covers/cleanagile.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+- **The Purple Cow** by Seth Godin
+<div class="image-container">
+<img src="/img/book_covers/purplecow.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+- **Slow Productivity** by Cal Newport
+<div class="image-container">
+<img src="/img/book_covers/slow_productivity.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+- **Linchpin** by Seth Godin
+<div class="image-container">
+<img src="/img/book_covers/linchpin.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+- **Daring Greatly** by Brene Brown
+<div class="image-container">
+<img src="/img/book_covers/daring_greatly.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+- **Dare To Lead** by Brene Brown
+<div class="image-container">
+<img src="/img/book_covers/daretolead.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+- **The Icarus Deception** by Seth Godin
+<div class="image-container">
+<img src="/img/book_covers/icarus.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+- **When** by Daniel H Pink
+<div class="image-container">
+<img src="/img/book_covers/when.jpg" width="100" alt="image unavailable">
+</div>
+> "Given a choice, human beings prefer endings that elevate. We favour sequences of events that rise rather than fall, that improve rather than deteriorate, that lift us up rather than bring us down."
+
+- **To Sell is Human** by Daniel H Pink
+<div class="image-container">
+<img src="/img/book_covers/tosellishuman.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+- **Inspired** by Marty Cagan
+<div class="image-container">
+<img src="/img/book_covers/inspired.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+- **Make Time** by Jake Knapp, John Zeratsky
+<div class="image-container">
+<img src="/img/book_covers/maketime.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+On the shelf
+============
+
+- **Emotion by Design** by Greg Hoffman 
+<div class="image-container">
+<img src="/img/book_covers/emotion.jpg" width="100" alt="image unavailable">
+</div>
+<div style="clear: both;"></div>
+
+
 
 
 
