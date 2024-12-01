@@ -36,6 +36,11 @@ jobs:
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
 
+      - name: Compress Images
+        uses: calibreapp/image-actions@main
+        with:
+          jpegQuality: 80
+  
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v1
