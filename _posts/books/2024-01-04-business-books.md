@@ -182,7 +182,7 @@ Business books reading list
 <div class="image-container">
 <img src="/img/book_covers/when.jpg" width="100" alt="image unavailable">
 </div>
-> "Given a choice, human beings prefer endings that elevate. We favour sequences of events that rise rather than fall, that improve rather than deteriorate, that lift us up rather than bring us down."
+<div style="clear: both;"></div>
 
 - **To Sell is Human** by Daniel H Pink
 <div class="image-container">
