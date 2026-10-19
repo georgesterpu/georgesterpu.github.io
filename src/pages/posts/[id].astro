@@ -1,0 +1,103 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import Bookshelf from '../../components/Bookshelf.astro';
+import RunningJournal from '../../components/RunningJournal.astro';
+import '../../styles/collections.css';
+import {
+  publishedPosts,
+  formatDate,
+  tagSlug,
+  postUrl,
+  readingTime,
+} from '../../lib/content';
+export async function getStaticPaths() {
+  const posts = await publishedPosts();
+  return posts.map((post, i) => ({
+    params: { id: post.id },
+    props: {
+      post,
+      next: posts.slice(i + 1).find((entry) => !entry.data.archived),
+    },
+  }));
+}
+interface Props {
+  post: CollectionEntry<'posts'>;
+  next?: CollectionEntry<'posts'>;
+}
+const { post, next } = Astro.props;
+const { Content, headings } = await render(post);
+const contents = headings.filter((item) => item.depth === 2);
+const isCollection = post.data.presentation !== 'article';
+---
+
+<SiteLayout title={post.data.title} description={post.data.description} article>
+  <div class:list={['article-shell', { 'collection-article': isCollection }]}>
+    <a
+      class="back-link"
+      href={post.data.presentation === 'bookshelf' ? '/books/' : '/writing/'}
+    >
+      {post.data.presentation === 'bookshelf'
+        ? '← The bookshelf'
+        : '← All writing'}
+    </a>
+    <article>
+      <header class="article-heading">
+        <p class="eyebrow">{post.data.tags.join(' / ') || 'Reflections'}</p>
+        <h1>{post.data.title}</h1>
+        <p class="article-deck">{post.data.description}</p>
+        <div class="article-meta mono">
+          <time datetime={post.data.date.toISOString()}>
+            {formatDate(post.data.date)}
+          </time>
+          {!isCollection && (
+            <>
+              <span aria-hidden="true">/</span>
+              <span>{readingTime(post.body)} min read</span>
+            </>
+          )}
+          {post.data.updated && (
+            <>
+              <span aria-hidden="true">/</span>
+              <span>Updated {formatDate(post.data.updated)}</span>
+            </>
+          )}
+        </div>
+      </header>
+      {!isCollection && contents.length > 3 && (
+        <details class="article-contents">
+          <summary>On this page</summary>
+          <ol>
+            {contents.map((item) => (
+              <li>
+                <a href={`#${item.slug}`}>{item.text}</a>
+              </li>
+            ))}
+          </ol>
+        </details>
+      )}
+      {post.data.presentation === 'bookshelf' ? (
+        <Bookshelf list={post.id} />
+      ) : post.data.presentation === 'running-journal' ? (
+        <RunningJournal />
+      ) : (
+        <div class="prose">
+          <Content />
+        </div>
+      )}
+      <footer class="article-end">
+        <div class="tag-list">
+          {post.data.tags.map((tag) => (
+            <a href={`/tags/${tagSlug(tag)}/`}>{tag}</a>
+          ))}
+        </div>
+        <p>Written by George Sterpu.</p>
+        {next && (
+          <a class="text-link" href={postUrl(next)}>
+            Read next: {next.data.title} <span aria-hidden="true">→</span>
+          </a>
+        )}
+      </footer>
+    </article>
+  </div>
+</SiteLayout>

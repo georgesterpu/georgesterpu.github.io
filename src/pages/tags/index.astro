@@ -1,0 +1,26 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { publishedPosts, tagSlug } from '../../lib/content';
+const posts = await publishedPosts();
+const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
+---
+
+<SiteLayout title="Topics">
+  <header class="page-heading">
+    <p class="eyebrow">Explore the notebook</p>
+    <h1>
+      By <em>topic.</em>
+    </h1>
+  </header>
+  <div class="topic-list">
+    {tags.map((tag) => (
+      <a href={`/tags/${tagSlug(tag)}/`}>
+        <span>{tag}</span>
+        <span class="mono">
+          {posts.filter((post) => post.data.tags.includes(tag)).length} entries
+          →
+        </span>
+      </a>
+    ))}
+  </div>
+</SiteLayout>

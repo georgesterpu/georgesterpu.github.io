@@ -1,0 +1,42 @@
+{
+  "name": "George Sterpu",
+  "qualification": "PhD",
+  "role": "Senior AI Engineer",
+  "headline": {
+    "lead": "Building useful",
+    "emphasis": "AI systems."
+  },
+  "location": "Bray, Ireland",
+  "email": "george.sterpu@gmail.com",
+  "github": "https://github.com/georgesterpu",
+  "linkedin": "https://www.linkedin.com/in/georgesterpu/",
+  "description": "Senior AI engineer with a PhD from Trinity College Dublin and 9+ years in applied machine learning research and industrial R&D. Experience in speech, multimodal learning, and building automation.",
+  "intro": "I'm George, an AI engineer with a background in speech and multimodal learning. I now work on building automation at Honeywell. I enjoy understanding a problem, working through the constraints, and building something useful.",
+  "focus": "I'm interested in forward deployed engineering roles where I can work directly with customers and take a problem through to implementation.",
+  "experience": [
+    {
+      "company": "Honeywell",
+      "role": "Senior Advanced AI Engineer",
+      "period": "Jun 2025 — present",
+      "description": "Graph neural networks for building topology, deployed to a governed endpoint on Azure Databricks. Also working on site onboarding and HVAC fault detection and diagnosis."
+    },
+    {
+      "company": "Herbst Software",
+      "role": "Product Manager & Support Specialist",
+      "period": "Aug 2024 — Jun 2025",
+      "description": "Customer requirements, product management, software development, and DevOps for ERP-connected web software."
+    },
+    {
+      "company": "Xperi",
+      "role": "Senior R&D Engineer",
+      "period": "Feb 2021 — Apr 2024",
+      "description": "Developed an end-to-end speech recognition engine for Ergo, running in real time with one-second latency at 100 mW. Also developed speech synthesis engines and explored model compression."
+    },
+    {
+      "company": "Trinity College Dublin",
+      "role": "Doctoral Researcher",
+      "period": "Sep 2016 — Dec 2020",
+      "description": "Multimodal learning, audio-visual speech recognition, AV Align, Taris, and open-source research tools."
+    }
+  ]
+}

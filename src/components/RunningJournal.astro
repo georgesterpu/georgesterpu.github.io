@@ -1,0 +1,118 @@
+---
+import { getCollection, render } from 'astro:content';
+import { formatDate } from '../lib/content';
+const entries = (
+  await getCollection(
+    'runs',
+    ({ data }) => !data.draft && data.date <= new Date(),
+  )
+).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const years = [
+  ...new Set(entries.map((entry) => entry.data.date.getUTCFullYear())),
+];
+const runs = await Promise.all(
+  entries.map(async (entry) => ({
+    entry,
+    Content: (await render(entry)).Content,
+  })),
+);
+---
+
+<div class="journal-intro">
+  <p>
+    {entries.length} entries, {years.at(-1)}–{years[0]}. Race days, milestones,
+    and a lot of good company.
+  </p>
+  <nav aria-label="Jump to a year">
+    {years.map((year) => (
+      <a href={`#year-${year}`}>
+        {year} <span aria-hidden="true">↓</span>
+      </a>
+    ))}
+  </nav>
+</div>
+{years.map((year) => (
+  <section class="running-year" aria-labelledby={`year-${year}`}>
+    <div class="running-year-heading">
+      <h2 id={`year-${year}`}>
+        {year}
+        <span class="small-line" aria-hidden="true"></span>
+      </h2>
+      <p class="mono">
+        {
+          entries.filter((entry) => entry.data.date.getUTCFullYear() === year)
+            .length
+        }{' '}
+        journal entries
+      </p>
+    </div>
+    <div class="run-grid">
+      {runs
+        .filter(({ entry }) => entry.data.date.getUTCFullYear() === year)
+        .map(({ entry, Content }) => {
+          const [photo, ...rest] = entry.data.photos;
+          return (
+            <article
+              class:list={['run-card', { 'run-card-text': !photo }]}
+              id={entry.data.legacyAnchor}
+            >
+              {photo && (
+                <a
+                  class="run-photo"
+                  href={photo.src}
+                  aria-label={`View full-size photo: ${entry.data.title}`}
+                >
+                  <img
+                    src={photo.src}
+                    width={photo.width}
+                    height={photo.height}
+                    alt={photo.alt}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+              )}
+              <div class="run-card-copy">
+                <time class="mono" datetime={entry.data.date.toISOString()}>
+                  {formatDate(entry.data.date)}
+                </time>
+                <h3>
+                  <a href={`#${entry.data.legacyAnchor}`}>{entry.data.title}</a>
+                </h3>
+                {entry.body?.trim() && (
+                  <div class="prose run-notes">
+                    <Content />
+                  </div>
+                )}
+                {rest.length > 0 && (
+                  <details class="run-gallery">
+                    <summary>
+                      {rest.length} more{' '}
+                      {rest.length === 1 ? 'photo' : 'photos'}
+                    </summary>
+                    <div>
+                      {rest.map((image) => (
+                        <a
+                          href={image.src}
+                          aria-label={`View full-size photo: ${image.alt}`}
+                        >
+                          <img
+                            src={image.src}
+                            width={image.width}
+                            height={image.height}
+                            alt={image.alt}
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </a>
+                      ))}
+                    </div>
+                  </details>
+                )}
+              </div>
+            </article>
+          );
+        })}
+    </div>
+  </section>
+))}

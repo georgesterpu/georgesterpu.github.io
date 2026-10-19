@@ -1,0 +1,113 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import '../../styles/collections.css';
+import {
+  publishedBooks,
+  bookUrl,
+  hasBookNotes,
+  readingShelves,
+  shelfLabel,
+} from '../../lib/content';
+import Arrow from '../../components/Arrow.astro';
+const books = await publishedBooks();
+const shelves = await readingShelves();
+const seen = new Set<string>();
+const noted = [...books]
+  .sort(
+    (a, b) =>
+      b.data.list.id.localeCompare(a.data.list.id) ||
+      a.data.position - b.data.position,
+  )
+  .filter((book) => {
+    if (!hasBookNotes(book) || seen.has(book.data.cover)) return false;
+    seen.add(book.data.cover);
+    return true;
+  })
+  .slice(0, 8);
+---
+
+<SiteLayout
+  title="Bookshelf"
+  description="George Sterpu's reading lists and saved passages, arranged by year and subject."
+>
+  <header class="page-heading">
+    <p class="eyebrow">Away from the screen / The bookshelf</p>
+    <h1>
+      My reading <em>notebook.</em>
+    </h1>
+    <p>
+      A record of what I’ve been reading, with passages I wanted to keep. Browse
+      a year, explore the business shelf, or read the saved passages.
+    </p>
+  </header>
+  <div class="shelf-overview">
+    {shelves.map((shelf) => {
+      const entries = books.filter((book) => book.data.list.id === shelf.id);
+      return (
+        <a class="shelf-tile" href={`/posts/${shelf.id}/`}>
+          <div class="shelf-preview" aria-hidden="true">
+            {entries.slice(0, 3).map((book) => (
+              <img
+                src={book.data.cover}
+                alt=""
+                width="160"
+                height="240"
+                loading="lazy"
+              />
+            ))}
+          </div>
+          <div class="shelf-tile-label">
+            <h2>{shelfLabel(shelf.data.title)}</h2>
+            <Arrow />
+          </div>
+          <p>{shelf.data.description}</p>
+          <span class="mono">{entries.length} books</span>
+        </a>
+      );
+    })}
+  </div>
+  <section class="section-block">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">A few open pages</p>
+        <h2>Passages worth keeping.</h2>
+      </div>
+    </div>
+    <p class="section-intro">
+      Excerpts saved from my reading. These are the authors’ words, gathered in
+      my notebook.
+    </p>
+    <ul class="book-grid">
+      {noted.map((book) => (
+        <li class="book-card">
+          <div class="book-cover-stage">
+            <a
+              href={bookUrl(book)}
+              aria-label={`Read saved passages from ${book.data.title}`}
+            >
+              <img
+                src={book.data.cover}
+                width="300"
+                height="450"
+                alt={`Cover of ${book.data.title}`}
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <h3>
+            <a href={bookUrl(book)}>{book.data.title}</a>
+          </h3>
+          <p class="book-author">{book.data.author}</p>
+          <a class="text-link book-notes-link" href={bookUrl(book)}>
+            Saved passages <Arrow />
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+  <div class="page-endnote">
+    <a class="text-link" href="/writing/">
+      Back to all writing <Arrow />
+    </a>
+  </div>
+</SiteLayout>

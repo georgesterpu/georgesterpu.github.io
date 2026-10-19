@@ -1,0 +1,67 @@
+{
+  "repository": "https://github.com/georgesterpu/georgesterpu.github.io",
+  "commit": "f32bb105b52c2983620c9c41205dda5e5bea1a63",
+  "entries": [
+    {
+      "source": "_posts/2023-01-28-first-post.md",
+      "destination": "src/content/posts/first-post.md",
+      "url": "/posts/first-post/",
+      "updated": "2023-11-09"
+    },
+    {
+      "source": "_posts/2023-11-01-running.md",
+      "destination": "src/content/posts/running.md",
+      "url": "/posts/running/",
+      "updated": "2025-12-13"
+    },
+    {
+      "source": "_posts/2024-09-15-ferris_questions.md",
+      "destination": "src/content/posts/ferris_questions.md",
+      "url": "/posts/ferris_questions/",
+      "updated": "2024-09-15"
+    },
+    {
+      "source": "_posts/2024-10-20-master_of_change.md",
+      "destination": "src/content/posts/master_of_change.md",
+      "url": "/posts/master_of_change/",
+      "updated": "2024-10-20"
+    },
+    {
+      "source": "_posts/books/2023-10-30-reading-list.md",
+      "destination": "src/content/posts/reading-list.md",
+      "url": "/posts/reading-list/",
+      "updated": "2024-03-21"
+    },
+    {
+      "source": "_posts/books/2024-01-01-reading-list-2024.md",
+      "destination": "src/content/posts/reading-list-2024.md",
+      "url": "/posts/reading-list-2024/",
+      "updated": "2024-12-31"
+    },
+    {
+      "source": "_posts/books/2024-01-04-business-books.md",
+      "destination": "src/content/posts/business-books.md",
+      "url": "/posts/business-books/",
+      "updated": "2024-12-01"
+    },
+    {
+      "source": "_posts/books/2025-01-01-reading-list-2025.md",
+      "destination": "src/content/posts/reading-list-2025.md",
+      "url": "/posts/reading-list-2025/",
+      "updated": "2025-12-13"
+    }
+  ],
+  "transformations": [
+    "Removed page-local styles and inline image sizing; shared responsive styles replace them.",
+    "Added lazy loading and descriptive image alt text from the surrounding heading or book title.",
+    "Removed empty quote placeholders; retained all written prose and quotations.",
+    "Copied original image and publication assets without changing their names.",
+    "Optimised the 206 copied raster images from 97.5 MB to 18.3 MB; original files remain in legacy/.",
+    "Normalised article body headings below the page title while preserving their text and anchors.",
+    "Added Markdown/HTML block boundaries so quotations render correctly, and intrinsic image dimensions to reduce layout shifts.",
+    "Kept the original first post reachable in the archive.",
+    "Reorganised 180 book entries into individual Markdown files under src/content/books, retaining titles, authors, covers, order, and written notes. Parent post URLs now render responsive shelves.",
+    "Moved all 33 running events and 49 photo references to individual Markdown files under src/content/runs, retaining written results and existing event anchors."
+  ],
+  "originalCheckout": "legacy/ is untouched; it is not included in the deployed site."
+}

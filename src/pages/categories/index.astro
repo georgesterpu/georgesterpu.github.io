@@ -1,0 +1,31 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { publishedPosts, tagSlug } from '../../lib/content';
+const posts = await publishedPosts();
+const categories = [
+  ...new Set(posts.flatMap((post) => post.data.categories)),
+].sort();
+---
+
+<SiteLayout title="Categories">
+  <header class="page-heading">
+    <p class="eyebrow">Explore the notebook</p>
+    <h1>
+      By <em>category.</em>
+    </h1>
+  </header>
+  <div class="topic-list">
+    {categories.map((category) => (
+      <a href={`/categories/${tagSlug(category)}/`}>
+        <span>{category}</span>
+        <span class="mono">
+          {
+            posts.filter((post) => post.data.categories.includes(category))
+              .length
+          }{' '}
+          entries →
+        </span>
+      </a>
+    ))}
+  </div>
+</SiteLayout>

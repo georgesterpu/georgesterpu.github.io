@@ -1,0 +1,31 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import PostList from '../../components/PostList.astro';
+import { publishedPosts, tagSlug } from '../../lib/content';
+export async function getStaticPaths() {
+  const posts = await publishedPosts();
+  return [...new Set(posts.flatMap((post) => post.data.categories))].map(
+    (category) => ({
+      params: { category: tagSlug(category) },
+      props: {
+        category,
+        posts: posts.filter((post) => post.data.categories.includes(category)),
+      },
+    }),
+  );
+}
+const { category, posts } = Astro.props;
+---
+
+<SiteLayout title={`Category: ${category}`}>
+  <header class="page-heading">
+    <a class="back-link" href="/writing/">
+      ← All writing
+    </a>
+    <p class="eyebrow">From the notebook</p>
+    <h1>
+      On <em>{category}.</em>
+    </h1>
+  </header>
+  <PostList posts={posts} />
+</SiteLayout>

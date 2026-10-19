@@ -1,0 +1,36 @@
+---
+import { formatDate, postUrl } from '../lib/content';
+import type { CollectionEntry } from 'astro:content';
+import Arrow from './Arrow.astro';
+interface Props {
+  posts: CollectionEntry<'posts'>[];
+  headingLevel?: 2 | 3;
+}
+const { posts, headingLevel = 2 } = Astro.props;
+const Heading = headingLevel === 2 ? 'h2' : 'h3';
+---
+
+<div class="post-list">
+  {posts.map((post) => (
+    <article
+      class="post-row"
+      data-post
+      data-search={`${post.data.title} ${post.data.description} ${post.data.tags.join(' ')}`.toLowerCase()}
+      data-tags={post.data.tags.join('|')}
+    >
+      <time class="mono" datetime={post.data.date.toISOString()}>
+        {formatDate(post.data.date)}
+      </time>
+      <div>
+        <p class="eyebrow">{post.data.tags.join(' / ') || 'Reflections'}</p>
+        <Heading class="post-title">
+          <a href={postUrl(post)}>
+            {post.data.title}
+            <Arrow />
+          </a>
+        </Heading>
+        <p>{post.data.description}</p>
+      </div>
+    </article>
+  ))}
+</div>

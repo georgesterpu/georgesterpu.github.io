@@ -1,0 +1,108 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import profile from '../data/profile.json';
+---
+
+<SiteLayout
+  title="About"
+  description="George Sterpu: AI engineer, PhD, runner, and reader based in Bray, Ireland."
+>
+  <header class="page-heading">
+    <p class="eyebrow">About me</p>
+    <h1>
+      Research, software,
+      <br />
+      <em>and people.</em>
+    </h1>
+    <p>
+      I’m George Sterpu, an AI engineer with a PhD from Trinity College Dublin.
+      My background is in speech and multimodal learning. These days, I work on
+      machine learning for building automation at Honeywell.
+    </p>
+  </header>
+  <div class="about-grid">
+    <div class="prose">
+      <h2>How I got here</h2>
+      <p>
+        During my PhD at Trinity, I researched how sound and mouth movements can
+        help a model recognise speech. I proposed{' '}
+        <a href="/work/av-align/">AV Align</a>, developed Taris for online
+        decoding, and shared the implementations as open-source projects. That
+        research led to seven first-author papers, including follow-up journal
+        work published in 2022.
+      </p>
+      <p>
+        At Xperi, I developed{' '}
+        <a href="/work/edge-speech/">
+          speech recognition for a low-power processor
+        </a>
+        . At Herbst Software, I moved closer to customers, combining product
+        management with development, DevOps, and support. At Honeywell, I now
+        work on{' '}
+        <a href="/work/building-automation/">building models and automation</a>.
+      </p>
+      <h2>Why forward deployed engineering?</h2>
+      <p>
+        I want to bring those experiences together: understand a customer’s
+        problem, work through the technical constraints, build with the people
+        who will use the system, and carry the work through to deployment.
+      </p>
+      <p>
+        Working in support made the human side of software much more concrete
+        for me. I want to keep that connection as I continue working in AI.
+      </p>
+      <h2>Outside work</h2>
+      <p>
+        I’m part of Bray Runners and enjoy participating and volunteering at
+        parkrun. Running gives me a sense of progress and community. Reading
+        brings in perspectives from business, psychology, science, and lives
+        very different from my own.
+      </p>
+      <p>
+        This site is a place for both sides: the engineering work and the things
+        that keep me curious.
+      </p>
+    </div>
+    <aside class="about-aside">
+      <img
+        src="/img/profile_pic.jpg"
+        width="800"
+        height="800"
+        alt="George Sterpu"
+      />
+      <p class="mono">Bray, Ireland / EU citizen</p>
+      <a class="text-link" href="/cv/">
+        View my résumé <span aria-hidden="true">↗</span>
+      </a>
+      <a class="text-link" href="/publications/">
+        Research & publications <span aria-hidden="true">↗</span>
+      </a>
+      <a class="text-link" href={profile.github}>
+        Open source on GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </aside>
+  </div>
+  <section class="section-block">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">The path so far</p>
+        <h2>Experience.</h2>
+      </div>
+      <a class="text-link" href="/cv/">
+        Full résumé <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <div class="experience-list">
+      {profile.experience.map((item) => (
+        <div class="experience-row">
+          <p class="mono">{item.period}</p>
+          <div>
+            <h3>{item.company}</h3>
+            <p class="experience-role">{item.role}</p>
+            <p>{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</SiteLayout>

@@ -1,0 +1,29 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import WorkList from '../../components/WorkList.astro';
+---
+
+<SiteLayout
+  title="Selected work"
+  description="From doctoral audio–visual alignment research to edge speech recognition and applied AI: selected work by George Sterpu."
+>
+  <header class="page-heading">
+    <p class="eyebrow">Selected work</p>
+    <h1>
+      Work in AI
+      <br />
+      <em>and software.</em>
+    </h1>
+    <p>
+      Selected projects, from my current work in building automation back to my
+      doctoral research in audio–visual speech recognition.
+    </p>
+  </header>
+  <WorkList />
+  <div class="page-endnote">
+    <p>My research lives in the open, too.</p>
+    <a class="text-link" href="/publications/">
+      Publications and open-source work <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</SiteLayout>

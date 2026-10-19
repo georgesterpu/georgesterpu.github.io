@@ -1,0 +1,86 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import profile from '../data/profile.json';
+---
+
+<SiteLayout
+  title="Résumé"
+  description="Résumé of George Sterpu, PhD: applied AI, product engineering, speech research, and deployment."
+>
+  <div class="article-shell">
+    <header class="article-heading">
+      <p class="eyebrow">Résumé / October 2026</p>
+      <h1>George Sterpu, PhD</h1>
+      <p class="article-deck">
+        Senior AI Engineer · Bray, Ireland · EU citizen
+      </p>
+      <p>
+        <a href={`mailto:${profile.email}`}>{profile.email}</a> ·{' '}
+        <a href={profile.linkedin}>LinkedIn</a> ·{' '}
+        <a href={profile.github}>GitHub</a>
+      </p>
+      <button class="button print-button" id="print-cv" type="button" hidden>
+        Print / save as PDF <span aria-hidden="true">↗</span>
+      </button>
+    </header>
+    <div class="prose">
+      <h2>Profile</h2>
+      <p>{profile.description}</p>
+      <p>
+        Experience across problem formulation, architecture, experimentation,
+        evaluation, optimisation, deployment, and technical collaboration. Areas
+        include GNNs, Transformers, multimodal learning, speech AI, diffusion
+        models, and Edge AI.
+      </p>
+      <h2>Experience</h2>
+      {profile.experience.map((item) => (
+        <section class="cv-role">
+          <h3>
+            {item.role} · {item.company}
+          </h3>
+          <p class="mono">{item.period}</p>
+          <p>{item.description}</p>
+        </section>
+      ))}
+      <h3>Earlier experience</h3>
+      <p>
+        Lab Assistant, Trinity College Dublin (2017–2019): deep learning
+        tutorials and student support. Research Intern, INRIA Grenoble (2015):
+        real-time sound source localisation. Software Engineer, CODECart
+        Alliance (2013–2014): speech compression algorithms for the NXP Coolflux
+        DSP.
+      </p>
+      <h2>Education</h2>
+      <h3>PhD · Trinity College Dublin</h3>
+      <p>
+        2016–2021. Audio-visual speech recognition, Electronic & Electrical
+        Engineering and the ADAPT Centre.
+      </p>
+      <h3>Master 2 · University Grenoble Alpes</h3>
+      <p>
+        2014–2015. Electrical Engineering and Control Systems (MiSCIT), research
+        track.
+      </p>
+      <h3>Bachelor’s · Politehnica University of Bucharest</h3>
+      <p>
+        2009–2013. Automatic Control and Computer Science, Systems Engineering.
+      </p>
+      <h2>Research</h2>
+      <p>
+        Seven first-author publications, including two journal papers and five
+        conference papers. Open-source Python projects in multimodal learning
+        and speech recognition.
+      </p>
+      <p>
+        <a href="/publications/">View the publications list →</a>
+      </p>
+    </div>
+  </div>
+  <script>
+    const printButton = document.querySelector<HTMLButtonElement>('#print-cv');
+    if (printButton) {
+      printButton.hidden = false;
+      printButton.addEventListener('click', () => window.print());
+    }
+  </script>
+</SiteLayout>

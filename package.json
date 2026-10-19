@@ -1,0 +1,33 @@
+{
+  "name": "george-sterpu",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev --host 127.0.0.1",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview --host 127.0.0.1",
+    "check": "ASTRO_TELEMETRY_DISABLED=1 astro sync && tsc --noEmit",
+    "verify": "bun run check && bun run build && bun run check:links",
+    "check:links": "bun scripts/check-links.ts",
+    "check:browser": "PLAYWRIGHT_BROWSERS_PATH=.cache/playwright bun scripts/check-browser.ts",
+    "new:post": "bun scripts/new-post.ts",
+    "social:card": "bun scripts/social-card.ts",
+    "migrate": "bun scripts/migrate-legacy.ts",
+    "format": "prettier --write src scripts docs astro.config.mjs package.json tsconfig.json"
+  },
+  "dependencies": {
+    "astro": "^7.4.0",
+    "@astrojs/rss": "latest",
+    "@astrojs/sitemap": "latest",
+    "@fontsource-variable/dm-sans": "latest",
+    "@fontsource-variable/literata": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "playwright": "^1.64.1",
+    "prettier": "latest",
+    "prettier-plugin-astro": "latest",
+    "typescript": "^7.0.0"
+  }
+}

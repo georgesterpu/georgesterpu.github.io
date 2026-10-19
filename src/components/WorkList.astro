@@ -1,0 +1,38 @@
+---
+import { selectedWork, workUrl } from '../lib/content';
+import Arrow from './Arrow.astro';
+interface Props {
+  headingLevel?: 2 | 3;
+}
+const { headingLevel = 2 } = Astro.props;
+const Heading = headingLevel === 2 ? 'h2' : 'h3';
+const items = await selectedWork();
+---
+
+<div class="work-list">
+  {items.map((item, index) => (
+    <a class="work-row" href={workUrl(item)}>
+      <span class="work-number mono" aria-hidden="true">
+        0{index + 1}
+      </span>
+      <div class="work-copy">
+        <p class="eyebrow">
+          {item.data.company} <span aria-hidden="true">/</span>{' '}
+          {item.data.category} <span aria-hidden="true">/</span>{' '}
+          {item.data.period}
+        </p>
+        <Heading class="work-title">{item.data.title}</Heading>
+        <p>{item.data.description}</p>
+        <div class="tag-list">
+          {item.data.tags.map((tag) => (
+            <span>{tag}</span>
+          ))}
+        </div>
+      </div>
+      <div class="work-proof">
+        <span>{item.data.proof}</span>
+        <Arrow />
+      </div>
+    </a>
+  ))}
+</div>

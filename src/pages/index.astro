@@ -1,0 +1,183 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import WorkList from '../components/WorkList.astro';
+import PostList from '../components/PostList.astro';
+import Arrow from '../components/Arrow.astro';
+import profile from '../data/profile.json';
+import { publishedPosts } from '../lib/content';
+const posts = (await publishedPosts())
+  .filter((post) => !post.data.archived)
+  .slice(0, 3);
+---
+
+<SiteLayout>
+  <section class="hero" aria-labelledby="intro-title">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        <span class="small-line" aria-hidden="true"></span> Senior AI engineer /
+        PhD
+      </p>
+      <h1 id="intro-title">
+        {profile.headline.lead}
+        <br />
+        <em>{profile.headline.emphasis}</em>
+      </h1>
+      <p class="hero-intro">{profile.intro}</p>
+      <div class="hero-actions">
+        <a class="button" href="#selected-work">
+          Explore my work <Arrow />
+        </a>
+        <a class="text-link" href="/about/">
+          A little about me <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+    <aside class="hero-aside" aria-label="Meet George">
+      <div class="portrait-frame">
+        <img
+          src="/img/profile_pic.jpg"
+          width="800"
+          height="800"
+          alt="George Sterpu"
+          fetchpriority="high"
+        />
+        <span class="portrait-note mono">Based in Bray, Ireland</span>
+      </div>
+      <p>
+        <span class="location-dot" aria-hidden="true"></span> Currently building
+        AI at Honeywell
+      </p>
+    </aside>
+  </section>
+
+  <div class="credentials" aria-label="Experience at a glance">
+    <p>
+      <strong>9+ years</strong>
+      <span>Research to real-world systems</span>
+    </p>
+    <p>
+      <strong>PhD, Trinity College Dublin</strong>
+      <span>Multimodal machine learning</span>
+    </p>
+    <p>
+      <strong>Customer software</strong>
+      <span>Product, development, and support</span>
+    </p>
+  </div>
+
+  <section
+    id="selected-work"
+    class="section-block"
+    aria-labelledby="work-title"
+  >
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">01 / Selected work</p>
+        <h2 id="work-title">Research and engineering.</h2>
+      </div>
+      <a class="text-link" href="/work/">
+        Work in detail <Arrow />
+      </a>
+    </div>
+    <WorkList headingLevel={3} />
+  </section>
+
+  <section class="working-note" aria-labelledby="approach-title">
+    <div>
+      <p class="eyebrow">How I like to work</p>
+      <h2 id="approach-title">
+        Understand the problem.
+        <br />
+        <em>Work with the people.</em>
+      </h2>
+    </div>
+    <div>
+      <p>
+        I've worked in research, product development, and customer support.
+        Those roles have made me more interested in what people are trying to
+        do, and in whether the software actually helps them do it.
+      </p>
+      <p>That’s what draws me to forward deployed engineering.</p>
+      <a class="text-link" href="/about/">
+        More about my approach <Arrow />
+      </a>
+    </div>
+  </section>
+
+  <section
+    class="section-block writing-section"
+    aria-labelledby="writing-title"
+  >
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">02 / The notebook</p>
+        <h2 id="writing-title">From the notebook.</h2>
+      </div>
+      <a class="text-link" href="/writing/">
+        All writing <Arrow />
+      </a>
+    </div>
+    <p class="section-intro">
+      Books, ideas, and lessons from outside the code editor.
+    </p>
+    <PostList posts={posts} headingLevel={3} />
+  </section>
+
+  <section class="offscreen" aria-labelledby="offscreen-title">
+    <div>
+      <p class="eyebrow">Away from the screen</p>
+      <h2 id="offscreen-title">
+        A few more miles.
+        <br />
+        One more chapter.
+      </h2>
+      <p>
+        You’ll often find me out with Bray Runners, at the local parkrun, or
+        with a non-fiction book. I like learning things that change how I see
+        the world.
+      </p>
+      <div class="offscreen-links">
+        <a class="text-link" href="/posts/running/">
+          The running journal <Arrow />
+        </a>
+        <a class="text-link" href="/books/">
+          On my bookshelf <Arrow />
+        </a>
+      </div>
+    </div>
+    <a
+      class="running-image"
+      href="/posts/running/"
+      aria-label="Read my running journal"
+    >
+      <img
+        src="/img/running/glenmore.jpg"
+        width="960"
+        height="640"
+        alt="A moment from the Glenmore Marathon running journal"
+        loading="lazy"
+        decoding="async"
+      />
+      <span class="mono">
+        Glenmore Marathon, 2025 <span aria-hidden="true">↗</span>
+      </span>
+    </a>
+  </section>
+
+  <section id="contact" class="contact-block" aria-labelledby="contact-title">
+    <p class="eyebrow">Let’s connect</p>
+    <h2 id="contact-title">Get in touch.</h2>
+    <p>{profile.focus}</p>
+    <div class="contact-actions">
+      <a class="button" href={`mailto:${profile.email}`}>
+        Say hello <Arrow />
+      </a>
+      <a class="text-link" href={profile.linkedin}>
+        Find me on LinkedIn <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <a class="email-link" href={`mailto:${profile.email}`}>
+      {profile.email}
+    </a>
+  </section>
+</SiteLayout>

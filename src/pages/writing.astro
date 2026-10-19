@@ -1,0 +1,125 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import '../styles/collections.css';
+import PostList from '../components/PostList.astro';
+import { publishedPosts } from '../lib/content';
+const posts = (await publishedPosts()).filter((post) => !post.data.archived);
+const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
+---
+
+<SiteLayout
+  title="Writing"
+  description="A notebook on books, ideas, running, and learning by George Sterpu."
+>
+  <header class="page-heading">
+    <p class="eyebrow">The notebook</p>
+    <h1>
+      Reading, running,
+      <br />
+      <em>and reflections.</em>
+    </h1>
+    <p>
+      Reading lists, reflections, and a running journal. A place to keep track
+      of the ideas and experiences that stay with me.
+    </p>
+  </header>
+  <nav class="notebook-guides" aria-label="Explore the notebook">
+    <a href="/books/">
+      <strong>
+        The bookshelf <span aria-hidden="true">↗</span>
+      </strong>
+      <span>Reading lists and saved passages</span>
+    </a>
+    <a href="/posts/running/">
+      <strong>
+        The running journal <span aria-hidden="true">↗</span>
+      </strong>
+      <span>Race days, milestones, and photographs</span>
+    </a>
+  </nav>
+  <div class="writing-tools" id="writing-tools" hidden>
+    <label class="search-label">
+      <svg
+        viewBox="0 0 24 24"
+        width="19"
+        height="19"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+        aria-hidden="true"
+      >
+        <circle cx="10.5" cy="10.5" r="6.5" />
+        <path d="m16 16 5 5" />
+      </svg>
+      <span class="sr-only">Search writing</span>
+      <input
+        id="post-search"
+        type="search"
+        placeholder="Find something to read…"
+        autocomplete="off"
+      />
+    </label>
+    <div class="filter-list" aria-label="Filter writing by topic">
+      <button type="button" data-filter="all" aria-pressed="true">
+        All writing
+      </button>
+      {tags.map((tag) => (
+        <button type="button" data-filter={tag} aria-pressed="false">
+          {tag}
+        </button>
+      ))}
+    </div>
+  </div>
+  <p
+    class="results-count mono"
+    id="result-count"
+    aria-live="polite"
+    aria-atomic="true"
+  >
+    {posts.length} entries
+  </p>
+  <PostList posts={posts} />
+  <p id="no-results" class="empty-state" hidden>
+    No entries match. Try a different word or select “All writing”.
+  </p>
+  <div class="page-endnote">
+    <p>Follow new entries in your feed reader.</p>
+    <a class="text-link" href="/feed.xml">
+      Subscribe via RSS <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+  <script>
+    const tools = document.querySelector<HTMLElement>('#writing-tools');
+    const input = document.querySelector<HTMLInputElement>('#post-search');
+    const filters =
+      document.querySelectorAll<HTMLButtonElement>('[data-filter]');
+    const rows = document.querySelectorAll<HTMLElement>('[data-post]');
+    const count = document.querySelector('#result-count');
+    const empty = document.querySelector<HTMLElement>('#no-results');
+    let activeTag = 'all';
+    function update() {
+      const query = input?.value.toLocaleLowerCase().trim() ?? '';
+      let visible = 0;
+      for (const row of rows) {
+        const matches =
+          (row.dataset.search ?? '').includes(query) &&
+          (activeTag === 'all' ||
+            (row.dataset.tags ?? '').split('|').includes(activeTag));
+        row.hidden = !matches;
+        if (matches) visible++;
+      }
+      if (count)
+        count.textContent = `${visible} ${visible === 1 ? 'entry' : 'entries'}`;
+      if (empty) empty.hidden = visible !== 0;
+    }
+    if (tools) tools.hidden = false;
+    input?.addEventListener('input', update);
+    for (const filter of filters)
+      filter.addEventListener('click', () => {
+        activeTag = filter.dataset.filter ?? 'all';
+        for (const item of filters)
+          item.setAttribute('aria-pressed', String(item === filter));
+        update();
+      });
+  </script>
+</SiteLayout>

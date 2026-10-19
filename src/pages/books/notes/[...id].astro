@@ -1,0 +1,57 @@
+---
+import { getEntry, render, type CollectionEntry } from 'astro:content';
+import SiteLayout from '../../../layouts/SiteLayout.astro';
+import '../../../styles/collections.css';
+import { publishedBooks, hasBookNotes } from '../../../lib/content';
+export async function getStaticPaths() {
+  return (await publishedBooks())
+    .filter(hasBookNotes)
+    .map((book) => ({ params: { id: book.id }, props: { book } }));
+}
+interface Props {
+  book: CollectionEntry<'books'>;
+}
+const { book } = Astro.props;
+const list = await getEntry(book.data.list);
+const { Content } = await render(book);
+---
+
+<SiteLayout
+  title={`${book.data.title} — saved passages`}
+  description={`Passages from ${book.data.title} by ${book.data.author}, saved in George Sterpu's reading notebook.`}
+  article
+>
+  <div class="article-shell">
+    <a
+      class="back-link"
+      href={`/posts/${book.data.list.id}/#book-${book.data.position}`}
+    >
+      ← {list?.data.title ?? 'Back to the reading list'}
+    </a>
+    <header class="book-note-heading">
+      <img
+        src={book.data.cover}
+        width="220"
+        height="330"
+        alt={`Cover of ${book.data.title}`}
+      />
+      <div>
+        <p class="eyebrow">From the bookshelf / Saved passages</p>
+        <h1>{book.data.title}</h1>
+        <p class="book-note-author">{book.data.author}</p>
+        <p class="mono">
+          Collected in {list?.data.title ?? 'my reading notebook'}
+        </p>
+      </div>
+    </header>
+    <div class="prose book-note-body">
+      <Content />
+    </div>
+    <aside class="article-end">
+      <p>These excerpts are from the book by {book.data.author}.</p>
+      <a class="text-link" href="/books/">
+        Explore the bookshelf <span aria-hidden="true">→</span>
+      </a>
+    </aside>
+  </div>
+</SiteLayout>

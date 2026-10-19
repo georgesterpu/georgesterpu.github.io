@@ -1,0 +1,148 @@
+---
+import '@fontsource-variable/dm-sans';
+import '@fontsource-variable/literata';
+import '@fontsource-variable/literata/wght-italic.css';
+import '../styles/global.css';
+import profile from '../data/profile.json';
+interface Props {
+  title?: string;
+  description?: string;
+  article?: boolean;
+}
+const {
+  title,
+  description = profile.description,
+  article = false,
+} = Astro.props;
+const pageTitle = title
+  ? `${title} — ${profile.name}`
+  : `${profile.name} — AI engineer`;
+const path = Astro.url.pathname;
+const isNotFound = path.startsWith('/404');
+const canonical = new URL(isNotFound ? '/404.html' : path, Astro.site);
+const nav = [
+  { href: '/work/', label: 'Work' },
+  { href: '/writing/', label: 'Writing' },
+  { href: '/about/', label: 'About' },
+];
+---
+
+<!doctype html>
+<html lang="en-IE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    {isNotFound && <meta name="robots" content="noindex" />}
+    <meta name="theme-color" content="#f7f7f0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="George Sterpu — Writing"
+      href="/feed.xml"
+    />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={article ? 'article' : 'website'} />
+    <meta property="og:url" content={canonical} />
+    <meta
+      property="og:image"
+      content={new URL('/social-card.png', Astro.site)}
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="George Sterpu — AI engineer, PhD" />
+    <meta property="og:locale" content="en_IE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: profile.name,
+        jobTitle: profile.role,
+        url: Astro.site?.href,
+        sameAs: [profile.github, profile.linkedin],
+      }).replace(/</g, '\\u003c')}
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <aside class="ai-disclaimer" aria-label="AI generation disclosure">
+      <p class="shell">
+        <strong>100% AI-generated at this stage.</strong> Work in progress.
+      </p>
+    </aside>
+    <header class="site-header shell">
+      <a class="wordmark" href="/" aria-label="George Sterpu — home">
+        <span class="monogram" aria-hidden="true">
+          gs<span>.</span>
+        </span>
+        <span>
+          George Sterpu<span class="wordmark-degree">, PhD</span>
+        </span>
+      </a>
+      <nav aria-label="Main navigation">
+        {nav.map((item) => (
+          <a
+            href={item.href}
+            aria-current={
+              path === item.href
+                ? 'page'
+                : path.startsWith(item.href) ||
+                    (item.href === '/writing/' &&
+                      (path.startsWith('/posts/') ||
+                        path.startsWith('/books/')))
+                  ? 'location'
+                  : undefined
+            }
+          >
+            {item.label}
+          </a>
+        ))}
+        <a class="nav-contact" href="/#contact">
+          Say hello <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </header>
+    <main id="main" class="shell" tabindex="-1">
+      <slot />
+    </main>
+    <footer class="site-footer shell">
+      <p>© {new Date().getFullYear()} George Sterpu</p>
+      <div>
+        <a href={profile.github}>
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
+        <a href={profile.linkedin}>
+          LinkedIn <span aria-hidden="true">↗</span>
+        </a>
+        <a href="/feed.xml">RSS</a>
+      </div>
+    </footer>
+    <script>
+      // The old Chirpy site installed a service worker. Remove only its known
+      // caches and root worker so a previous visit cannot serve stale pages.
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .getRegistrations()
+          .then((registrations) => {
+            for (const registration of registrations) {
+              const script =
+                registration.active?.scriptURL ??
+                registration.waiting?.scriptURL;
+              if (script && new URL(script).pathname === '/sw.js')
+                void registration.unregister();
+            }
+          })
+          .catch(() => {});
+      }
+    </script>
+  </body>
+</html>
