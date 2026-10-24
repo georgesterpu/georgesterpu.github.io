@@ -3,6 +3,7 @@ import { render, type CollectionEntry } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import Bookshelf from '../../components/Bookshelf.astro';
 import RunningJournal from '../../components/RunningJournal.astro';
+import Poem from '../../components/Poem.astro';
 import '../../styles/collections.css';
 import {
   publishedPosts,
@@ -28,11 +29,21 @@ interface Props {
 const { post, next } = Astro.props;
 const { Content, headings } = await render(post);
 const contents = headings.filter((item) => item.depth === 2);
-const isCollection = post.data.presentation !== 'article';
+const isCollection =
+  post.data.presentation === 'bookshelf' ||
+  post.data.presentation === 'running-journal';
 ---
 
 <SiteLayout title={post.data.title} description={post.data.description} article>
-  <div class:list={['article-shell', { 'collection-article': isCollection }]}>
+  <div
+    class:list={[
+      'article-shell',
+      {
+        'collection-article': isCollection,
+        'poem-article': post.data.presentation === 'poem',
+      },
+    ]}
+  >
     <a
       class="back-link"
       href={post.data.presentation === 'bookshelf' ? '/books/' : '/writing/'}
@@ -45,7 +56,9 @@ const isCollection = post.data.presentation !== 'article';
       <header class="article-heading">
         <p class="eyebrow">{post.data.tags.join(' / ') || 'Reflections'}</p>
         <h1>{post.data.title}</h1>
-        <p class="article-deck">{post.data.description}</p>
+        {post.data.showDescription && (
+          <p class="article-deck">{post.data.description}</p>
+        )}
         <div class="article-meta mono">
           <time datetime={post.data.date.toISOString()}>
             {formatDate(post.data.date)}
@@ -80,6 +93,13 @@ const isCollection = post.data.presentation !== 'article';
         <Bookshelf list={post.id} />
       ) : post.data.presentation === 'running-journal' ? (
         <RunningJournal />
+      ) : post.data.presentation === 'poem' ? (
+        <Poem
+          illustration={post.data.illustration}
+          printable={post.data.printable}
+        >
+          <Content />
+        </Poem>
       ) : (
         <div class="prose">
           <Content />

@@ -7,6 +7,7 @@ const posts = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    showDescription: z.boolean().default(true),
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
     tags: z.array(z.string()).default([]),
@@ -15,8 +16,17 @@ const posts = defineCollection({
     archived: z.boolean().default(false),
     legacySource: z.string().optional(),
     presentation: z
-      .enum(['article', 'bookshelf', 'running-journal'])
+      .enum(['article', 'bookshelf', 'running-journal', 'poem'])
       .default('article'),
+    illustration: z
+      .object({
+        src: z.string(),
+        alt: z.string(),
+        width: z.number().int().positive(),
+        height: z.number().int().positive(),
+      })
+      .optional(),
+    printable: z.string().optional(),
   }),
 });
 

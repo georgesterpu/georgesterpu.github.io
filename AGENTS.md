@@ -3,6 +3,7 @@
 ## Scope and architecture
 
 - Work only inside `D:\work\new_blog`. Install tools and caches here. Never change global Git settings, PATH, or tool installations.
+- This directory is the Git checkout. Stay on `main` unless George explicitly requests another branch. `.tools/release/` is an obsolete local source snapshot; do not edit it or copy changes into it.
 - Astro 7 static output, TypeScript 7, latest stable Bun (currently verified with 1.4.3). Use Bun for every project command, including the runtime: `bunfig.toml` sets `run.bun = true`. Do not use npm, npx, or Node to run project code. No server, database, React runtime, or CMS is required.
 - `legacy/` is the preserved original Jekyll checkout. Treat it as read-only reference, not the new project. Do not deploy from it or add it as a submodule.
 - Do not publish the supplied `cv/` directory or extracted private CV data. Public copy belongs in `src/data/profile.json`, pages, and work Markdown.
@@ -77,5 +78,5 @@ On Windows, run the project-local executable:
 - Pull requests build and check; only `main` can deploy. No `gh-pages` branch, personal access token, generated build commits, or custom upload script.
 - Do not push, merge, or deploy unless the user has requested it. Finish the local changes and validation first.
 - Keep the existing repository public unless George explicitly requests a visibility change. Do not restore the copied Chirpy root licence to the replacement Astro source; its historical notice remains in the original checkout and Git history.
-- First deployment must retain the original repository's Git history. The new source currently lives beside `legacy/`; do not initialise an unrelated history or overwrite the reference checkout to force a release. Prepare the migration on a branch of the original repo when publication is requested.
+- The Astro migration is already published. Preserve the original repository's inherited Git history; do not initialise an unrelated history or overwrite `legacy/`.
 - `public/sw.js` retires the original Chirpy service worker. Keep it available so returning readers can update.

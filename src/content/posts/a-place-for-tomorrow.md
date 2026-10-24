@@ -1,9 +1,17 @@
 ---
 title: 'A place for tomorrow'
-description: 'A poem about a feather, a busy morning, and a moment shared between Nora and her brother.'
+description: 'At bedtime, Nora found a feather in the pocket of her coat.'
+showDescription: false
 date: 2026-10-24
 tags: [poetry]
 draft: false
+presentation: poem
+illustration:
+  src: '/img/a-place-for-tomorrow-illustration.svg'
+  alt: 'A feather in a red bowl beside a rainy window, with little boots and a coat waiting below.'
+  width: 610
+  height: 1150
+printable: '/img/a-place-for-tomorrow.svg'
 ---
 
 At bedtime, Nora found a feather\
@@ -32,16 +40,3 @@ caught the morning light.
 he asked.
 
 Nora reached for her coat.
-
-## Poem and picture
-
-<img
-  src="/img/a-place-for-tomorrow.svg"
-  width="1400"
-  height="1500"
-  alt="A place for tomorrow, illustrated with a feather in a red bowl, little boots, and a coat beside a rain-streaked window."
-  loading="lazy"
-  decoding="async"
-/>
-
-[View the illustrated poem at full size](/img/a-place-for-tomorrow.svg).

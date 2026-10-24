@@ -321,6 +321,9 @@
     margin-inline: auto;
     padding-block: 56px 72px;
   }
+  .poem-article {
+    max-width: 960px;
+  }
   .article-heading {
     margin-bottom: 40px;
     padding-bottom: 32px;

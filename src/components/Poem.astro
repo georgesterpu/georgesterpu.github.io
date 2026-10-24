@@ -1,0 +1,112 @@
+---
+interface Props {
+  illustration?: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  };
+  printable?: string;
+}
+const { illustration, printable } = Astro.props;
+---
+
+<div class:list={['poem-body', { 'poem-with-illustration': illustration }]}>
+  <div class="poem-verses prose">
+    <slot />
+  </div>
+  {illustration && (
+    <figure class="poem-illustration">
+      <img
+        src={illustration.src}
+        alt={illustration.alt}
+        width={illustration.width}
+        height={illustration.height}
+        decoding="async"
+      />
+    </figure>
+  )}
+</div>
+{printable && (
+  <p class="poem-print">
+    <a class="text-link" href={printable} download>
+      Download the printable poem (SVG) <span aria-hidden="true">↓</span>
+    </a>
+  </p>
+)}
+
+<style>
+  .poem-with-illustration {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: clamp(32px, 5vw, 72px);
+    align-items: center;
+  }
+
+  .poem-verses {
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.0625rem;
+    line-height: 1.85;
+    overflow-wrap: normal;
+  }
+
+  .poem-verses :global(p) {
+    margin: 0 0 1.5em;
+    text-wrap: initial;
+  }
+
+  .poem-verses :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .poem-illustration {
+    min-width: 0;
+    margin: 0;
+  }
+
+  .poem-illustration img {
+    width: 100%;
+    height: auto;
+  }
+
+  .poem-print {
+    margin-top: 40px;
+  }
+
+  @media (max-width: 700px) {
+    .poem-with-illustration {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 32px;
+    }
+
+    .poem-verses {
+      font-size: 1rem;
+    }
+
+    .poem-illustration {
+      width: min(70%, 260px);
+      justify-self: center;
+    }
+  }
+
+  @media print {
+    .poem-with-illustration {
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 12mm;
+    }
+
+    .poem-verses {
+      font-size: 10pt;
+      line-height: 1.65;
+    }
+
+    .poem-illustration {
+      width: 100%;
+    }
+
+    .poem-print {
+      display: none;
+    }
+  }
+</style>

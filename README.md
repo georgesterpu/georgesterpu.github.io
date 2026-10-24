@@ -42,10 +42,16 @@ Before committing:
 
 This syncs and validates content, checks `.ts` files with TypeScript 7, builds the static site, and checks internal links, images, and fragment IDs, including filename case.
 
+## Source and publishing
+
+Work and run Git commands from this project root on `main`. The old `.tools/release/` folder is a local snapshot from the initial migration and is no longer a Git checkout. No copying between source folders is needed.
+
+The public [GitHub repository](https://github.com/georgesterpu/georgesterpu.github.io) contains the Astro templates, Markdown, styles, assets, configuration, and full inherited Git history. A push to `main` runs verification and builds the HTML in GitHub Actions, then deploys the `dist/` artifact to GitHub Pages. Local builds are for preview and validation; do not commit or manually upload `dist/`.
+
 See [the writing guide](docs/editing.md), [deployment](docs/deployment.md), and [agent instructions](AGENTS.md).
 
 ## Original blog
 
 The original Jekyll repository is preserved in `legacy/`, with its Git history untouched. The migration imported all eight posts, publications, and image assets. Existing post, tag, category, archive, and feed URLs remain available. [The migration manifest](docs/migration.json) records the source commit and transformations.
 
-`legacy/`, the supplied `cv/`, local tools, caches, and build output are ignored by Git and are not part of the deployed site. Only `dist/` is published. The public résumé is a separate web page, maintained from the supplied CV.
+`legacy/`, the supplied `cv/`, temporary authoring sources in `tmp/`, local tools, caches, and build output are ignored by Git and are not part of the source repository. Only `dist/` is published to Pages. The public résumé is a separate web page, maintained from the supplied CV.

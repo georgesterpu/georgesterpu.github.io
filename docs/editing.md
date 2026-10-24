@@ -34,6 +34,12 @@ The page template supplies the `h1` title. Start sections in the body at `##` (l
 
 `archived: true` is different from a draft: the URL remains public and appears in the archive, but it is not featured on the homepage or writing index, or included in RSS. The original “Under construction” post uses this.
 
+## Illustrated poems
+
+Use `presentation: poem` to set the Markdown verses in the site's serif type. Keep stanza breaks as blank lines and end each verse line with a backslash for a hard line break. An optional `illustration` supplies a drawing beside the verses on wide screens, with `src`, descriptive `alt`, `width`, and `height` fields. Use an illustration without embedded text or a paper background so it sits naturally on the page.
+
+Set `showDescription: false` to omit the subtitle beneath the post title; `description` still supplies the search, listing, and sharing excerpt. An optional `printable` path adds a download link without displaying the printable file. See `src/content/posts/a-place-for-tomorrow.md` for a complete example.
+
 ## Other content
 
 - **Work:** edit `src/content/work/*.md`. Frontmatter defines title, summary, company, period, tags, ordering, and the short proof label. The body uses ordinary Markdown. `order: 1` appears first; keep selected work newest first and update the order values when adding an entry. Research claims should link to primary papers or code; the AV Align source memo is `docs/research/av-align.md`.

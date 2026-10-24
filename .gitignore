@@ -5,6 +5,7 @@ dist/
 .cache/
 legacy/
 cv/
+tmp/
 .env
 .env.*
 !.env.example
