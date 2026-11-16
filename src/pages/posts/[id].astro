@@ -111,7 +111,7 @@ const isCollection =
             <a href={`/tags/${tagSlug(tag)}/`}>{tag}</a>
           ))}
         </div>
-        <p>Written by George Sterpu.</p>
+        {post.data.showByline && <p>Written by George Sterpu.</p>}
         {next && (
           <a class="text-link" href={postUrl(next)}>
             Read next: {next.data.title} <span aria-hidden="true">→</span>

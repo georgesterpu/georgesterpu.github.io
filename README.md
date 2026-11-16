@@ -42,6 +42,23 @@ Before committing:
 
 This syncs and validates content, checks `.ts` files with TypeScript 7, builds the static site, and checks internal links, images, and fragment IDs, including filename case.
 
+## Local screenshot review
+
+On Linux, install the browser inside this checkout once:
+
+```bash
+PLAYWRIGHT_BROWSERS_PATH=.cache/playwright bunx --bun playwright install chromium --only-shell
+```
+
+With `bun run dev` serving the site, capture a labelled review:
+
+```bash
+bun run review:screenshots --label iteration-01
+bun run review:screenshots --label iteration-02 --page home --device mobile
+```
+
+The first command captures desktop (1440 × 900), mobile (390 × 844) and a tablet homepage (768 × 1024). Each page has first-viewport and full-page PNGs plus a local `index.html` gallery in `.tools/redesign-review/<label>/`. These files are ignored by Git. Page choices are `home`, `writing`, `article`, `work`, `books`, `reading-list`, `running`, or `all`; device choices are `desktop`, `mobile`, `tablet`, or `all`. Set `BLOG_BASE_URL` to review a local preview on another port. This command only captures local output; it does not publish changes.
+
 ## Source and publishing
 
 Work and run Git commands from this project root on `main`. The old `.tools/release/` folder is a local snapshot from the initial migration and is no longer a Git checkout. No copying between source folders is needed.

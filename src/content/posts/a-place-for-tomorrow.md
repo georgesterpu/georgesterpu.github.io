@@ -2,6 +2,7 @@
 title: 'A place for tomorrow'
 description: 'At bedtime, Nora found a feather in the pocket of her coat.'
 showDescription: false
+showByline: false
 date: 2026-10-24
 tags: [poetry]
 draft: false

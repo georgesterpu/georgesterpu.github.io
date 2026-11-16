@@ -2,6 +2,7 @@
 title: 'A shirt in the wind'
 description: 'The rain stops. On the washing line a yellow shirt fills with the wind.'
 showDescription: false
+showByline: false
 date: 2026-10-26
 tags: [poetry]
 draft: false

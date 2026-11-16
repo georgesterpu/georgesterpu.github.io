@@ -16,13 +16,13 @@ const {
 } = Astro.props;
 const pageTitle = title
   ? `${title} — ${profile.name}`
-  : `${profile.name} — AI engineer`;
+  : `${profile.name} — An engineer's notebook`;
 const path = Astro.url.pathname;
 const isNotFound = path.startsWith('/404');
 const canonical = new URL(isNotFound ? '/404.html' : path, Astro.site);
 const nav = [
-  { href: '/work/', label: 'Work' },
   { href: '/writing/', label: 'Writing' },
+  { href: '/work/', label: 'Work' },
   { href: '/about/', label: 'About' },
 ];
 ---
@@ -34,7 +34,7 @@ const nav = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     {isNotFound && <meta name="robots" content="noindex" />}
-    <meta name="theme-color" content="#f7f7f0" />
+    <meta name="theme-color" content="#faf8f2" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     <link rel="canonical" href={canonical} />
@@ -55,7 +55,10 @@ const nav = [
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="George Sterpu — AI engineer, PhD" />
+    <meta
+      property="og:image:alt"
+      content={`${profile.headline.lead} ${profile.headline.emphasis} — George Sterpu's notebook`}
+    />
     <meta property="og:locale" content="en_IE" />
     <meta name="twitter:card" content="summary_large_image" />
     <script
@@ -74,19 +77,12 @@ const nav = [
     <a class="skip-link" href="#main">
       Skip to content
     </a>
-    <aside class="ai-disclaimer" aria-label="AI generation disclosure">
-      <p class="shell">
-        <strong>100% AI-generated at this stage.</strong> Work in progress.
-      </p>
-    </aside>
     <header class="site-header shell">
       <a class="wordmark" href="/" aria-label="George Sterpu — home">
         <span class="monogram" aria-hidden="true">
           gs<span>.</span>
         </span>
-        <span>
-          George Sterpu<span class="wordmark-degree">, PhD</span>
-        </span>
+        <span>George Sterpu</span>
       </a>
       <nav aria-label="Main navigation">
         {nav.map((item) => (
@@ -106,9 +102,6 @@ const nav = [
             {item.label}
           </a>
         ))}
-        <a class="nav-contact" href="/#contact">
-          Say hello <span aria-hidden="true">↗</span>
-        </a>
       </nav>
     </header>
     <main id="main" class="shell" tabindex="-1">

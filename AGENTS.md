@@ -66,7 +66,7 @@ On Windows, run the project-local executable:
 ## Design and interaction
 
 - Direction: quiet editorial. Warm paper, dark ink, restrained green, Literata headlines and DM Sans body. CSS variables live at the top of `global.css`.
-- Primary path: understand George's work → inspect evidence → read or get in touch. Navigation stays Work / Writing / About.
+- Primary path: meet George → explore the notebook → learn about his approach to work or get in touch. Navigation stays Writing / Work / About. The homepage uses a concise background summary; historical case studies and credentials belong on the deeper Work/About/CV pages. See `docs/design.md` for the approved direction.
 - Prefer clear labels, readable typography, generous spacing, and progressive enhancement. No decorative animation, new frameworks, dashboards, or UI libraries for routine changes.
 - Prefer concrete first-person copy over portfolio slogans. Do not invent personal anecdotes. Listing components default to `h2`; pass `headingLevel={3}` when placing them inside a section already headed by `h2`.
 - Preserve keyboard focus, heading order, the skip link, semantic landmarks, mobile layout, reduced-motion behaviour, and print styling for the résumé.

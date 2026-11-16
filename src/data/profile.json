@@ -3,15 +3,15 @@
   "qualification": "PhD",
   "role": "Senior AI Engineer",
   "headline": {
-    "lead": "Building useful",
-    "emphasis": "AI systems."
+    "lead": "Hi, I'm",
+    "emphasis": "George."
   },
   "location": "Bray, Ireland",
   "email": "george.sterpu@gmail.com",
   "github": "https://github.com/georgesterpu",
   "linkedin": "https://www.linkedin.com/in/georgesterpu/",
-  "description": "Senior AI engineer with a PhD from Trinity College Dublin and 9+ years in applied machine learning research and industrial R&D. Experience in speech, multimodal learning, and building automation.",
-  "intro": "I'm George, an AI engineer with a background in speech and multimodal learning. I now work on building automation at Honeywell. I enjoy understanding a problem, working through the constraints, and building something useful.",
+  "description": "George Sterpu's notebook: writing, machine-learning projects, books and running, from Bray, Ireland.",
+  "intro": "I'm an AI engineer living in Bray, Ireland. I write about things I've worked on, books I've read, and questions I've been trying to answer. There's a running journal here too.",
   "focus": "I'm interested in forward deployed engineering roles where I can work directly with customers and take a problem through to implementation.",
   "experience": [
     {

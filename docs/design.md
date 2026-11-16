@@ -1,22 +1,22 @@
 # Design direction
 
-**Quiet editorial**, chosen by George. Warm white, dark ink, restrained green. Literata for expressive headlines, DM Sans for navigation and reading. Both fonts are self-hosted. The visual hierarchy should feel like a considered personal publication.
+**Warm personal editorial**, approved by George after local desktop/mobile review in November 2026. Warm paper, dark ink, restrained green. Literata for expressive headlines, DM Sans for navigation and reading. Both fonts are self-hosted. Keep the genuine portrait in colour. The site is an engineer's personal notebook, with professional evidence available a layer deeper.
 
 ## The first visit
 
-The primary reader is someone considering George for a forward deployed engineering role. Within the first screen they should understand:
+Within the first screen a reader should understand:
 
-- who he is: an AI engineer with a research background;
-- what he brings: problem understanding, product thinking, and technical delivery;
-- where to go next: selected work, writing, or contact.
+- who George is: an AI engineer living in Bray, Ireland;
+- what is here: writing, books, running, and a short introduction to his work;
+- where to start reading.
 
-The homepage progresses through identity → evidence → working approach → writing → personal context → contact. Navigation uses the direct labels Work, Writing, and About. No carousels, hidden navigation, splash screen, decorative charts, or interactive skill meters.
+The homepage progresses through introduction → curated writing and reading → a concise work summary → running/books → contact. Navigation uses Writing, Work, and About. The work summary connects research, engineering and business problems, with a quiet link to earlier work. Avoid a homepage project showcase or credentials strip: George wants his approach to current problems to carry more weight than a list of past achievements. No carousels, hidden navigation, splash screen, decorative charts, or interactive skill meters.
 
 ## Evidence and positioning
 
-Three work notes appear newest first: production-governed building ML at Honeywell, real-time speech on a 100 mW processor at Xperi, and AV Align doctoral research at Trinity College Dublin. Industry accounts use the supplied October 2026 CV; the research account also links to the original papers and code. The evidence and contemporary comparisons are recorded in `research/av-align.md`. FDE is presented as the intended next direction, while the existing title remains Senior AI Engineer.
+Three historical work notes remain on `/work/`, newest first: production-governed building ML at Honeywell, real-time speech on a 100 mW processor at Xperi, and AV Align doctoral research at Trinity College Dublin. Industry accounts use the supplied October 2026 CV; the research account also links to the original papers and code. The evidence and contemporary comparisons are recorded in `research/av-align.md`. FDE is an intended next direction, not a title already held.
 
-Industry wording and source boundaries are documented in `research/industry-work.md`. Use specific first-person accounts and concrete constraints. Prefer “governed endpoint” to a broad “production” claim, and keep processor power and decoding latency attached to the reported speech workload. Avoid generic portfolio slogans and invented personal anecdotes. The homepage should explain the work in plain language before asking readers to explore it.
+Industry wording and source boundaries are documented in `research/industry-work.md`. Use specific first-person accounts and concrete constraints. Prefer “governed endpoint” to a broad “production” claim, and keep processor power and decoding latency attached to the reported speech workload. Avoid generic portfolio slogans and invented personal anecdotes. Keep patents, invention disclosures and trade secret awards distinct; do not turn them into a homepage credentials list.
 
 The original blog's reading lists, running journal, reflections, publications, and portrait keep the site personal. Technical writing can grow naturally as George adds real notes; the site does not fabricate a backlog of engineering articles.
 
@@ -36,4 +36,4 @@ Astro templates, CSS Grid, links, and native `details` controls cover these inte
 
 - Supplied CV: `cv/CV_George_Sterpu_Oct2026.pdf` (local reference only).
 - Original blog checkout: `legacy/`; exact source commit recorded in `migration.json`.
-- Public-facing copy is editable and should be reviewed by George before the first release, particularly the new professional positioning and work notes.
+- The redesign brief records the earlier candidate proposal. George's subsequent review replaces its two homepage project previews with the brief work summary described above. Public-facing changes still require his approval before publication.

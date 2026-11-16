@@ -14,7 +14,8 @@
     "new:post": "bun scripts/new-post.ts",
     "social:card": "bun scripts/social-card.ts",
     "migrate": "bun scripts/migrate-legacy.ts",
-    "format": "prettier --write src scripts docs astro.config.mjs package.json tsconfig.json"
+    "format": "prettier --write src scripts docs astro.config.mjs package.json tsconfig.json",
+    "review:screenshots": "bun scripts/capture-review.ts"
   },
   "dependencies": {
     "astro": "^7.4.0",
